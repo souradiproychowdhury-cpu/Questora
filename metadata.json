@@ -1,0 +1,6 @@
+{
+  "name": "Gemini AI Search & Authentication",
+  "description": "Fastshot AI Search composer with multi-model AI, voice instructions, device file attachments, and live web grounding.",
+  "requestFramePermissions": ["microphone", "identity-credentials-get"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

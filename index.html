@@ -1,0 +1,1769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Intelligence Designed To Evolve</title>
+  <meta name="description" content="Build applications that reason, adapt and collaborate using a modular AI platform designed for production." />
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+
+  <!-- BubbledotICG-FinePos via OnlineWebFonts CDN -->
+  <link href="https://db.onlinewebfonts.com/c/8cb707a9b8a73f8a7403336b861c3074?family=BubbledotICG-FinePos" rel="stylesheet" />
+
+  <!-- Font Awesome 6.5.2 for Enterprise Brands -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+
+  <link rel="stylesheet" href="/styles.css" />
+  <!-- Marked Markdown Parser for AI Search Responses -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <!-- Google Sign-In Identity Services API -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+
+  <!-- ====================================================================
+       VIEW 1: INTELLIGENCE DESIGNED TO EVOLVE (LANDING / WELCOME)
+       ==================================================================== -->
+  <div id="evolve-view" class="app-view">
+    <!-- Looping Background Video -->
+    <div class="bg">
+      <video class="bg-video" autoplay muted loop playsinline>
+        <source
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260809_012548_ef22562c-c0ae-4816-ad9d-f8922af4e6a7.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <!-- Main Viewport Page Container -->
+    <div class="page">
+      <!-- 1. Header (Desktop & Mobile) -->
+      <header class="site-header">
+        <!-- Logo -->
+        <a href="#evolve" class="brand-btn" aria-label="Home">
+          <img src="/src/assets/images/questora_minimal_logo_1789134147955.jpg" alt="Questora" class="h-9 w-9 rounded-full object-cover shadow-xs border border-teal-500/30 block" />
+        </a>
+
+        <!-- Desktop Nav Pill -->
+        <nav class="nav-pill" aria-label="Main Navigation">
+          <a href="#home" class="active">Home</a>
+          <a href="#models" class="open-models-trigger">Models</a>
+          <a href="#history" class="open-history-trigger">History</a>
+          <a href="#fastshot" class="enter-fastshot-trigger">Fastshot</a>
+        </nav>
+
+        <!-- Header Actions: History & Auth -->
+        <div class="header-actions">
+          <!-- Theme Toggle Button -->
+          <button id="theme-toggle-btn-1" class="header-icon-btn theme-toggle-btn" title="Toggle Light Mode" aria-label="Toggle light mode">
+            <i class="fa-solid fa-sun text-amber-400"></i>
+          </button>
+
+          <button id="evolve-history-btn" class="header-icon-btn open-history-trigger" title="Search History">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span class="history-count-badge hidden">0</span>
+          </button>
+
+          <div id="evolve-auth-container" class="auth-pill-container">
+            <button id="evolve-signin-btn" class="sign-in-btn auth-open-trigger">Sign in</button>
+            <div id="evolve-user-pill" class="user-profile-pill hidden">
+              <span class="user-avatar-circle">D</span>
+              <span class="user-name-text">User</span>
+              <i class="fa-solid fa-chevron-down text-xs user-menu-arrow"></i>
+              <div class="user-dropdown-menu">
+                <div class="user-dropdown-header">
+                  <div class="user-dd-name">User</div>
+                  <div class="user-dd-email">user@example.com</div>
+                </div>
+                <button type="button" class="user-dd-item open-history-trigger">
+                  <i class="fa-solid fa-clock-rotate-left"></i>
+                  <span>Search History</span>
+                </button>
+                <button type="button" class="user-dd-item open-bookmarks-trigger">
+                  <i class="fa-solid fa-bookmark"></i>
+                  <span>Saved Bookmarks</span>
+                </button>
+                <button type="button" class="user-dd-item open-models-trigger">
+                  <i class="fa-solid fa-bolt"></i>
+                  <span>AI Models Status</span>
+                </button>
+                <div class="user-dd-divider"></div>
+                <button type="button" class="user-dd-item user-logout-btn text-rose-400">
+                  <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                  <span>Sign out</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Burger Trigger -->
+        <button id="mobile-burger" class="mobile-burger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <!-- Mobile Menu Sheet & Overlay -->
+      <div id="mobile-overlay" class="mobile-overlay"></div>
+      <div id="mobile-sheet" class="mobile-menu-sheet">
+        <a href="#home" class="active">Home <i class="fa-solid fa-chevron-right text-xs opacity-40"></i></a>
+        <a href="#fastshot" class="enter-fastshot-trigger">Fastshot Search <i class="fa-solid fa-chevron-right text-xs opacity-40"></i></a>
+        <a href="#models" class="open-models-trigger">AI Models (Gemini & OpenAI) <i class="fa-solid fa-chevron-right text-xs opacity-40"></i></a>
+        <a href="#history" class="open-history-trigger">Search History <i class="fa-solid fa-chevron-right text-xs opacity-40"></i></a>
+        <a href="#bookmarks" class="open-bookmarks-trigger">Saved Bookmarks <i class="fa-solid fa-chevron-right text-xs opacity-40"></i></a>
+        <button type="button" class="mobile-signin auth-open-trigger">Sign in / Account</button>
+      </div>
+
+      <!-- 2. Hero (Center) -->
+      <main class="hero">
+        <!-- Trust Row -->
+        <div class="trust-row anim" style="--d: 0.05s;">
+          <div class="avatar-ring">
+            <div class="inner-circle">
+              <i class="fa-brands fa-microsoft"></i>
+            </div>
+          </div>
+          <div class="avatar-ring">
+            <div class="inner-circle">
+              <i class="fa-brands fa-amazon"></i>
+            </div>
+          </div>
+          <div class="avatar-ring">
+            <div class="inner-circle">
+              <i class="fa-brands fa-google"></i>
+            </div>
+          </div>
+          <div class="trust-pill">
+            <span>Trusted by 2000+ Enterprises</span>
+          </div>
+        </div>
+
+        <!-- Headline (BubbledotICG-FinePos display font) -->
+        <h1 class="headline">
+          <span class="headline-line">Intelligence</span>
+          <span class="headline-line">Designed To Evolve</span>
+        </h1>
+
+        <!-- Subhead -->
+        <p class="subhead anim" style="--d: 0.28s;">
+          Build applications that reason, adapt and collaborate using a modular AI platform designed for production.
+        </p>
+
+        <!-- CTA Pill -->
+        <div class="cta-wrapper anim-pulse" style="--d: 0.4s;">
+          <a href="#fastshot" class="cta-btn enter-fastshot-trigger">Get Started</a>
+        </div>
+      </main>
+
+      <!-- 3. Stats Footer (Exact 4 Metrics with animated counts) -->
+      <footer class="stats-footer">
+        <!-- Metric 1 -->
+        <div class="stat-item anim" style="--d: 0.5s;">
+          <div class="stat-icon">&lt;</div>
+          <div class="stat-body">
+            <div id="stat-inference" class="stat-value">120ms</div>
+            <div class="stat-label">Inference Time</div>
+          </div>
+        </div>
+
+        <!-- Metric 2 -->
+        <div class="stat-item anim" style="--d: 0.58s;">
+          <div class="stat-icon">%</div>
+          <div class="stat-body">
+            <div id="stat-uptime" class="stat-value">99.99%</div>
+            <div class="stat-label">Platform Uptime</div>
+          </div>
+        </div>
+
+        <!-- Metric 3 -->
+        <div class="stat-item anim" style="--d: 0.66s;">
+          <div class="stat-icon">*</div>
+          <div class="stat-body">
+            <div id="stat-runtime" class="stat-value">24/7</div>
+            <div class="stat-label">Autonomous Runtime</div>
+          </div>
+        </div>
+
+        <!-- Metric 4 -->
+        <div class="stat-item anim" style="--d: 0.74s;">
+          <div class="stat-icon">#</div>
+          <div class="stat-body">
+            <div id="stat-context" class="stat-value">2.4M</div>
+            <div class="stat-label">Context Windows</div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       VIEW 2: FASTSHOT HERO COMPOSITION (APP COMPOSER)
+       ==================================================================== -->
+  <div id="fastshot-view" class="app-view hidden-view">
+    <div class="stage">
+      <!-- Dawn Lake-and-Mountains Looping Video -->
+      <video class="stage-video" autoplay muted loop playsinline>
+        <source
+          src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260826_124724_bc041163-d651-425f-aea3-2acc1efc2c96.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <!-- Unit-scaled frame -->
+      <div class="frame">
+        <!-- Header Nav -->
+        <header class="fastshot-nav">
+          <div class="brand-left enter-evolve-trigger" role="button" aria-label="Fastshot home">
+            <span class="brand-text">Questora</span>
+
+            <!-- Live Status Indicator -->
+            <div id="fastshot-api-status" class="api-status-badge open-models-trigger" title="Click to view Model Status">
+              <span class="status-pulse-dot"></span>
+              <span class="status-text">Gemini & OpenAI Ready</span>
+            </div>
+          </div>
+
+          <!-- Absolutely Centered Links -->
+          <nav class="nav-center" aria-label="Fastshot Links">
+            <a href="#models" class="nav-link open-models-trigger">Models</a>
+            <a href="#history" class="nav-link open-history-trigger">History</a>
+            <a href="#bookmarks" class="nav-link open-bookmarks-trigger">Saved</a>
+            <a href="#evolve" class="nav-link enter-evolve-trigger">Overview</a>
+          </nav>
+
+          <!-- Nav Right Cluster: Auth & Back button -->
+          <div class="nav-right-cluster">
+            <!-- Theme Toggle Button -->
+            <button id="theme-toggle-btn-2" class="fastshot-icon-btn theme-toggle-btn" title="Toggle Light Mode" aria-label="Toggle light mode">
+              <i class="fa-solid fa-sun text-amber-400"></i>
+            </button>
+
+            <button id="fastshot-history-btn" class="fastshot-icon-btn open-history-trigger" title="Search History">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+              <span class="history-count-badge hidden">0</span>
+            </button>
+
+            <div id="fastshot-auth-container" class="auth-pill-container">
+              <button id="fastshot-signin-btn" class="nav-signin-btn auth-open-trigger">Sign in</button>
+              <div id="fastshot-user-pill" class="user-profile-pill hidden">
+                <span class="user-avatar-circle">D</span>
+                <span class="user-name-text">User</span>
+                <i class="fa-solid fa-chevron-down text-xs user-menu-arrow"></i>
+                <div class="user-dropdown-menu">
+                  <div class="user-dropdown-header">
+                    <div class="user-dd-name">User</div>
+                    <div class="user-dd-email">user@example.com</div>
+                  </div>
+                  <button type="button" class="user-dd-item open-history-trigger">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Search History</span>
+                  </button>
+                  <button type="button" class="user-dd-item open-bookmarks-trigger">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span>Saved Bookmarks</span>
+                  </button>
+                  <button type="button" class="user-dd-item open-models-trigger">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>AI Models Status</span>
+                  </button>
+                  <div class="user-dd-divider"></div>
+                  <button type="button" class="user-dd-item user-logout-btn text-rose-400">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span>Sign out</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <a href="#evolve" class="nav-right-cta enter-evolve-trigger" title="Back to Intelligence landing">
+              <span>Overview</span>
+            </a>
+          </div>
+        </header>
+
+        <!-- Fastshot Hero (Headline + Composer Card) -->
+        <main class="fastshot-hero">
+          <h1 class="fastshot-h1">Describe anything. We'll solve it.</h1>
+
+          <!-- Glass Composer Card -->
+          <form id="fastshot-search-form" class="fastshot-card" onsubmit="return false;">
+            <!-- Attached Files & Media Tray -->
+            <div id="composer-attachments-tray" class="composer-attachments-tray hidden"></div>
+
+            <!-- Real User Input Area -->
+            <div class="fastshot-input-wrap">
+              <textarea
+                id="fastshot-search-input"
+                class="fastshot-textarea"
+                placeholder="Describe anything, attach documents/photos, or give voice instructions..."
+                rows="2"
+                autocomplete="off"
+                spellcheck="false"
+              ></textarea>
+            </div>
+
+            <!-- Toolbar Strip -->
+            <div class="tools">
+              <!-- Left Mode Chips & Model Selector (In Left Corner Sideways) -->
+              <div class="chips">
+                <!-- Model: Interactive Selector Pill (Sideways in left corner) -->
+                <div class="model-selector-wrapper">
+                  <button type="button" id="model-dropdown-btn" class="chip chip-model-selector" aria-haspopup="true" aria-expanded="false" aria-label="Select AI Model" title="Switch AI Engine & Model">
+                    <span id="selected-model-label">
+                      <i class="fa-solid fa-bolt text-amber-400"></i> Gemini 3.8 Flash
+                    </span>
+                    <svg width="7" height="4" viewBox="0 0 7 4" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M1 1L3.5 3L6 1"/>
+                    </svg>
+                  </button>
+
+                  <!-- Floating Model Menu Dropdown -->
+                  <div id="model-dropdown-menu" class="model-menu-popup hidden" role="menu">
+                    <div class="model-menu-header">Select AI Engine & Model</div>
+
+                    <div class="model-option active" data-engine="gemini" data-model="gemini-3.8-flash" role="menuitem" tabindex="0">
+                      <div class="model-opt-icon gemini-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                      </div>
+                      <div class="model-opt-body">
+                        <div class="model-opt-title">
+                          Gemini 3.8 Flash
+                          <span class="badge-tag tag-primary">Google Grounded</span>
+                        </div>
+                        <div class="model-opt-desc">Real-time web citations, multimodal file analysis & fast streaming</div>
+                      </div>
+                      <i class="fa-solid fa-check model-opt-check"></i>
+                    </div>
+
+                    <div class="model-option" data-engine="gemini" data-model="gemini-3.1-flash-lite" role="menuitem" tabindex="0">
+                      <div class="model-opt-icon gemini-icon">
+                        <i class="fa-solid fa-gauge-high"></i>
+                      </div>
+                      <div class="model-opt-body">
+                        <div class="model-opt-title">
+                          Gemini 3.1 Flash Lite
+                          <span class="badge-tag tag-primary">Ultra Fast</span>
+                        </div>
+                        <div class="model-opt-desc">High-speed live web grounding and instant research synthesis</div>
+                      </div>
+                      <i class="fa-solid fa-check model-opt-check hidden"></i>
+                    </div>
+
+                    <div class="model-option" data-engine="openai" data-model="gpt-4o" role="menuitem" tabindex="0">
+                      <div class="model-opt-icon openai-icon">
+                        <i class="fa-solid fa-brain"></i>
+                      </div>
+                      <div class="model-opt-body">
+                        <div class="model-opt-title">
+                          OpenAI GPT-4o
+                          <span class="badge-tag tag-secondary">Reasoning</span>
+                        </div>
+                        <div class="model-opt-desc">Deep multimodal reasoning, code breakdown & document synthesis</div>
+                      </div>
+                      <i class="fa-solid fa-check model-opt-check hidden"></i>
+                    </div>
+
+                    <div class="model-option" data-engine="openai" data-model="gpt-4o-mini" role="menuitem" tabindex="0">
+                      <div class="model-opt-icon openai-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                      </div>
+                      <div class="model-opt-body">
+                        <div class="model-opt-title">
+                          OpenAI GPT-4o Mini
+                          <span class="badge-tag tag-secondary">Fast</span>
+                        </div>
+                        <div class="model-opt-desc">Lightweight reasoning & quick summary generation</div>
+                      </div>
+                      <i class="fa-solid fa-check model-opt-check hidden"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Chip 1: Deep Grounding (Comprehensive) -->
+                <button type="button" id="chip-mode-comprehensive" class="chip chip-mode active" data-mode="comprehensive" style="--pl: 12; --ig: 4.5;">
+                  <i class="fa-solid fa-globe"></i>
+                  <span>Deep Web Search</span>
+                </button>
+
+                <!-- Chip 2: Quick Fact (Concise) -->
+                <button type="button" id="chip-mode-concise" class="chip chip-mode" data-mode="concise" style="--pl: 12; --ig: 4.5;">
+                  <i class="fa-solid fa-bolt"></i>
+                  <span>Quick Fact</span>
+                </button>
+
+                <!-- Chip 3: Live News (News) -->
+                <button type="button" id="chip-mode-news" class="chip chip-mode" data-mode="news" style="--pl: 12; --ig: 4.5;">
+                  <i class="fa-solid fa-newspaper"></i>
+                  <span>Live News</span>
+                </button>
+              </div>
+
+              <!-- Right Cluster -->
+              <div class="right">
+                <!-- Hidden Device File Pickers -->
+                <input type="file" id="file-input-doc" multiple accept=".pdf,.doc,.docx,.txt,.md,.json,.csv,.rtf,.js,.ts,.py,.html" class="hidden">
+                <input type="file" id="file-input-pic" multiple accept="image/*" class="hidden">
+
+                <!-- Attachment Button with 3 Options: Document, Picture, Links -->
+                <div class="attachment-btn-wrapper">
+                  <button type="button" id="btn-attachment-toggle" class="attach" aria-label="Attach device files, pictures or links" title="Attach Document, Picture, or Link">
+                    <svg width="19.79" height="19.79" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21.44 11.05l-9.19 9.19a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/>
+                    </svg>
+                  </button>
+
+                  <!-- Attachment Sub-Menu with 3 Small Action Buttons -->
+                  <div id="attachment-menu-popup" class="attachment-menu-popup hidden">
+                    <div class="att-menu-header">Add to Search Analysis</div>
+                    <div class="att-menu-buttons">
+                      <!-- 1. Document -->
+                      <button type="button" id="btn-attach-doc-action" class="att-action-btn" title="Open device documents, PDFs, or files">
+                        <div class="att-action-icon doc-icon">
+                          <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                        <div class="att-action-info">
+                          <div class="att-action-name">Document</div>
+                          <div class="att-action-sub">PDF, Word, TXT, Code, Data</div>
+                        </div>
+                      </button>
+
+                      <!-- 2. Picture -->
+                      <button type="button" id="btn-attach-pic-action" class="att-action-btn" title="Open device pictures, photos, or images">
+                        <div class="att-action-icon pic-icon">
+                          <i class="fa-solid fa-image"></i>
+                        </div>
+                        <div class="att-action-info">
+                          <div class="att-action-name">Picture</div>
+                          <div class="att-action-sub">Photos, Screenshots, JPG, PNG</div>
+                        </div>
+                      </button>
+
+                      <!-- 3. Links -->
+                      <button type="button" id="btn-attach-link-action" class="att-action-btn" title="Add web link or URL to analyze">
+                        <div class="att-action-icon link-icon">
+                          <i class="fa-solid fa-link"></i>
+                        </div>
+                        <div class="att-action-info">
+                          <div class="att-action-name">Links</div>
+                          <div class="att-action-sub">Web page URL or reference</div>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Voice Instruction Button immediately beside Attachment -->
+                <button type="button" id="btn-voice-input" class="attach voice-btn" aria-label="Voice instruction" title="Click to speak your instruction or query">
+                  <i id="voice-mic-icon" class="fa-solid fa-microphone"></i>
+                  <span id="voice-pulse-ring" class="voice-pulse-ring hidden"></span>
+                </button>
+
+                <!-- Trending / Suggested Prompts Trigger -->
+                <button type="button" id="btn-quick-prompts" class="attach" aria-label="Suggested Prompts" title="Suggested prompt ideas">
+                  <i class="fa-solid fa-sparkles text-xs opacity-70"></i>
+                </button>
+
+                <!-- Quick Prompts Popover -->
+                <div id="quick-prompts-menu" class="quick-prompts-popup hidden">
+                  <div class="qp-header">
+                    <span><i class="fa-solid fa-sparkles text-amber-400"></i> Trending Queries</span>
+                  </div>
+                  <div class="qp-list">
+                    <button type="button" class="qp-item" data-query="Latest breakthrough discoveries in quantum computing this month">
+                      <span>Breakthroughs in quantum computing this month</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i>
+                    </button>
+                    <button type="button" class="qp-item" data-query="Compare Gemini 3.8 Flash vs GPT-4o architecture and benchmark performance">
+                      <span>Compare Gemini 3.8 Flash vs GPT-4o architecture</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i>
+                    </button>
+                    <button type="button" class="qp-item" data-query="Key geopolitical and macroeconomic market trends today">
+                      <span>Macroeconomic and global market trends today</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i>
+                    </button>
+                    <button type="button" class="qp-item" data-query="How does Google Search Grounding prevent AI hallucinations?">
+                      <span>How Google Search Grounding stops hallucinations</span>
+                      <i class="fa-solid fa-arrow-up-right-from-square text-xs opacity-50"></i>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Send: 35x35 circle with white UP-arrow -->
+                <button type="submit" id="btn-submit-search" class="send" aria-label="Execute AI Search">
+                  <svg id="send-arrow-icon" width="11.66" height="11.66" viewBox="0 0 12 12" fill="none">
+                    <path d="M6 10.5V1.5M6 1.5L2 5.5M6 1.5L10 5.5" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <i id="send-spinner-icon" class="fa-solid fa-spinner fa-spin text-white text-xs hidden"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </main>
+
+        <!-- Fastshot Proof Footer -->
+        <footer class="proof">
+          <p class="proof-caption">Built for people</p>
+          <div class="proof-logos">
+            <!-- Google (96.84u) -->
+            <svg class="logo-google" width="97" height="32" viewBox="0 0 97 32" fill="none">
+              <path d="M15.4 12.8V16.7H24.8C24.4 18.9 22.8 22.8 15.4 22.8C9 22.8 3.8 17.5 3.8 11C3.8 4.5 9 0 15.4 0C19.1 0 21.6 1.6 23 2.9L26.1 0C23.4 -2.5 19.8 -4.1 15.4 -4.1C6.9 -4.1 0 2.8 0 11.3C0 19.8 6.9 26.7 15.4 26.7C24.3 26.7 30.2 20.4 30.2 11.6C30.2 10.3 30 9.4 29.8 8.6L15.4 12.8Z" fill="#FFFFFF" transform="translate(0, 4) scale(0.9)"/>
+              <path d="M41.7 17.2C36.9 17.2 32.8 13.5 32.8 8.6C32.8 3.7 36.9 0 41.7 0C46.5 0 50.6 3.7 50.6 8.6C50.6 13.5 46.5 17.2 41.7 17.2ZM41.7 3.4C39.1 3.4 36.8 5.6 36.8 8.6C36.8 11.6 39.1 13.8 41.7 13.8C44.3 13.8 46.6 11.6 46.6 8.6C46.6 5.6 44.3 3.4 41.7 3.4Z" fill="#FFFFFF" transform="translate(0, 9) scale(0.9)"/>
+              <path d="M61.7 17.2C56.9 17.2 52.8 13.5 52.8 8.6C52.8 3.7 56.9 0 61.7 0C66.5 0 70.6 3.7 70.6 8.6C70.6 13.5 66.5 17.2 61.7 17.2ZM61.7 3.4C59.1 3.4 56.8 5.6 56.8 8.6C56.8 11.6 59.1 13.8 61.7 13.8C64.3 13.8 66.6 11.6 66.6 8.6C66.6 5.6 64.3 3.4 61.7 3.4Z" fill="#FFFFFF" transform="translate(0, 9) scale(0.9)"/>
+              <path d="M80.2 17.2C78.9 17.2 77.8 16.6 77.2 15.6H77.1V16.7C77.1 20.3 75.1 22.3 71.9 22.3C69.3 22.3 67.7 20.4 67 18.9L70.4 17.5C71 18.9 72.4 19.3 73.5 19.3C75.2 19.3 76.3 18.2 76.3 16.2V0.4H80.2V17.2ZM77.4 8.6C77.4 5.6 75.2 3.4 72.8 3.4C70.4 3.4 68.3 5.6 68.3 8.6C68.3 11.6 70.4 13.8 72.8 13.8C75.2 13.8 77.4 11.6 77.4 8.6Z" fill="#FFFFFF" transform="translate(0, 9) scale(0.9)"/>
+              <path d="M85.4 25.6H81.5V0.4H85.4V25.6Z" fill="#FFFFFF" transform="translate(0, 4) scale(0.9)"/>
+            </svg>
+
+            <!-- Cisco (67.29u) -->
+            <svg class="logo-cisco" width="68" height="28" viewBox="0 0 68 28" fill="none">
+              <!-- Cisco classic bridge bars + wordmark -->
+              <rect x="2" y="10" width="2.4" height="6" rx="1.2" fill="#FFFFFF"/>
+              <rect x="8" y="6" width="2.4" height="10" rx="1.2" fill="#FFFFFF"/>
+              <rect x="14" y="2" width="2.4" height="14" rx="1.2" fill="#FFFFFF"/>
+              <rect x="20" y="6" width="2.4" height="10" rx="1.2" fill="#FFFFFF"/>
+              <rect x="26" y="10" width="2.4" height="6" rx="1.2" fill="#FFFFFF"/>
+              <rect x="32" y="6" width="2.4" height="10" rx="1.2" fill="#FFFFFF"/>
+              <rect x="38" y="2" width="2.4" height="14" rx="1.2" fill="#FFFFFF"/>
+              <rect x="44" y="6" width="2.4" height="10" rx="1.2" fill="#FFFFFF"/>
+              <rect x="50" y="10" width="2.4" height="6" rx="1.2" fill="#FFFFFF"/>
+              <text x="3" y="25" font-family="'Inter', sans-serif" font-weight="700" font-size="9" fill="#FFFFFF" letter-spacing="0.16em">CISCO</text>
+            </svg>
+
+            <!-- Adobe (88.68u) -->
+            <svg class="logo-adobe" width="89" height="26" viewBox="0 0 89 26" fill="none">
+              <path d="M12.6 3L19.8 23H14.5L12.3 16.5H7.5L10.3 8.6L12.6 3ZM0 3H6.8L0 23V3ZM20.4 3H27.2V23L20.4 3Z" fill="#FFFFFF"/>
+              <text x="32" y="19" font-family="'Inter', sans-serif" font-weight="700" font-size="14" fill="#FFFFFF" letter-spacing="0.04em">Adobe</text>
+            </svg>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 1: SEARCH RESULTS DISPLAY OVERLAY
+       ==================================================================== -->
+  <div id="search-results-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="results-query-title">
+    <div class="modal-backdrop close-results-trigger"></div>
+    <div class="results-window">
+      <!-- Results Header Strip -->
+      <div class="results-window-header">
+        <div class="results-badges">
+          <span id="results-engine-badge" class="engine-pill badge-gemini">
+            <i class="fa-solid fa-bolt"></i> <span id="results-engine-name">Gemini 3.8 Flash</span>
+          </span>
+          <span id="results-grounding-badge" class="grounding-pill">
+            <i class="fa-solid fa-globe"></i> <span id="results-grounding-text">Google Search Grounded</span>
+          </span>
+          <span id="results-time-badge" class="time-pill">
+            <i class="fa-regular fa-clock"></i> <span id="results-time-text">320ms</span>
+          </span>
+        </div>
+
+        <div class="results-header-actions">
+          <!-- Multilingual Translation Selector -->
+          <div class="results-lang-selector-wrapper" title="Translate answer to another language">
+            <i class="fa-solid fa-language text-purple-400 lang-icon"></i>
+            <select id="results-language-select" class="results-lang-select" aria-label="Translate answer">
+              <option value="en" data-name="English">English (Original)</option>
+              <option value="es" data-name="Spanish">Español (Spanish)</option>
+              <option value="fr" data-name="French">Français (French)</option>
+              <option value="de" data-name="German">Deutsch (German)</option>
+              <option value="hi" data-name="Hindi">हिन्दी (Hindi)</option>
+              <option value="bn" data-name="Bengali">বাংলা (Bengali)</option>
+              <option value="zh" data-name="Chinese">中文 (Chinese)</option>
+              <option value="ja" data-name="Japanese">日本語 (Japanese)</option>
+              <option value="ko" data-name="Korean">한국어 (Korean)</option>
+              <option value="ar" data-name="Arabic">العربية (Arabic)</option>
+              <option value="pt" data-name="Portuguese">Português (Portuguese)</option>
+              <option value="ru" data-name="Russian">Русский (Russian)</option>
+              <option value="it" data-name="Italian">Italiano (Italian)</option>
+              <option value="nl" data-name="Dutch">Nederlands (Dutch)</option>
+              <option value="tr" data-name="Turkish">Türkçe (Turkish)</option>
+              <option value="id" data-name="Indonesian">Bahasa Indonesia</option>
+              <option value="vi" data-name="Vietnamese">Tiếng Việt</option>
+              <option value="pl" data-name="Polish">Polski</option>
+              <option value="sv" data-name="Swedish">Svenska</option>
+              <option value="th" data-name="Thai">ไทย (Thai)</option>
+              <option value="ur" data-name="Urdu">اردو (Urdu)</option>
+              <option value="ta" data-name="Tamil">தமிழ் (Tamil)</option>
+              <option value="te" data-name="Telugu">తెలుగు (Telugu)</option>
+              <option value="mr" data-name="Marathi">मराठी (Marathi)</option>
+              <option value="gu" data-name="Gujarati">ગુજરાતી (Gujarati)</option>
+            </select>
+            <span id="translation-loader" class="translation-loader hidden">
+              <i class="fa-solid fa-circle-notch fa-spin text-purple-400"></i>
+            </span>
+          </div>
+
+          <!-- Voice Assistant Read Aloud Button -->
+          <button type="button" id="btn-speak-result" class="results-btn voice-reader-btn" title="Listen with AI Voice Assistant (Space/V)">
+            <i id="voice-speak-icon" class="fa-solid fa-volume-high"></i>
+            <span class="btn-tooltip" id="voice-speak-tooltip">Read Aloud</span>
+          </button>
+          <button type="button" id="btn-copy-result" class="results-btn" title="Copy answer to clipboard">
+            <i class="fa-regular fa-copy"></i>
+            <span class="btn-tooltip">Copied!</span>
+          </button>
+          <button type="button" id="btn-bookmark-result" class="results-btn" title="Bookmark to account">
+            <i class="fa-regular fa-bookmark"></i>
+          </button>
+          <button type="button" class="results-btn close-results-trigger" title="Close results (Esc)">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Query Title -->
+      <div class="results-query-bar">
+        <div class="results-query-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <h2 id="results-query-title" class="results-query-text"></h2>
+      </div>
+
+      <!-- Active Translation Notice Banner -->
+      <div id="translation-active-badge" class="translation-active-badge hidden">
+        <div class="translation-badge-info">
+          <i class="fa-solid fa-language text-purple-400"></i>
+          <span>Translated into <strong id="translation-lang-name">Spanish</strong> with Gemini AI</span>
+        </div>
+        <button type="button" id="btn-revert-original" class="btn-revert-translation" title="Switch back to original English">
+          <i class="fa-solid fa-arrow-rotate-left"></i> Show Original
+        </button>
+      </div>
+
+      <!-- Loading State -->
+      <div id="results-loading-state" class="results-loading-state hidden">
+        <div class="loading-halo">
+          <div class="loading-spinner-ring"></div>
+          <i class="fa-solid fa-sparkles loading-sparkle"></i>
+        </div>
+        <div class="loading-progress-text">
+          <h3 id="loading-stage-title">Consulting Google Search...</h3>
+          <p id="loading-stage-desc">Retrieving live web sources and synthesizing facts with Gemini AI</p>
+        </div>
+        <div class="loading-skeletons">
+          <div class="sk-bar sk-w80"></div>
+          <div class="sk-bar sk-w95"></div>
+          <div class="sk-bar sk-w60"></div>
+        </div>
+      </div>
+
+      <!-- Results Body Scroll Area -->
+      <div id="results-content-area" class="results-scroll-body">
+        <!-- Voice Assistant Live Audio Player Banner -->
+        <div id="voice-assistant-banner" class="voice-assistant-banner hidden">
+          <div class="voice-banner-left">
+            <div class="voice-waves-container">
+              <span class="wave-bar bar-1"></span>
+              <span class="wave-bar bar-2"></span>
+              <span class="wave-bar bar-3"></span>
+              <span class="wave-bar bar-4"></span>
+              <span class="wave-bar bar-5"></span>
+            </div>
+            <div class="voice-banner-info">
+              <div class="voice-banner-title">
+                <i class="fa-solid fa-sparkles text-amber-400"></i>
+                <span id="voice-banner-status-text">Reading AI Overview...</span>
+              </div>
+              <div class="voice-banner-sub" id="voice-banner-sub-text">Gemini Grounded Assistant Voice</div>
+            </div>
+          </div>
+
+          <div class="voice-banner-controls">
+            <!-- Voice Persona Pill Button -->
+            <button type="button" id="btn-voice-persona-banner" class="voice-persona-pill" title="Current Voice Persona - Click to change">
+              <i id="voice-persona-icon" class="fa-solid fa-microphone-lines text-indigo-400"></i>
+              <span id="voice-persona-name">Professional</span>
+            </button>
+            <!-- Speed Selector -->
+            <button type="button" id="btn-voice-speed" class="voice-ctrl-pill" title="Playback Speed">
+              <span id="voice-speed-label">1.0x</span>
+            </button>
+            <!-- Settings Modal Trigger -->
+            <button type="button" id="btn-voice-settings-toggle" class="voice-ctrl-btn" title="Voice & Persona Settings">
+              <i class="fa-solid fa-sliders"></i>
+            </button>
+            <!-- Play / Pause -->
+            <button type="button" id="btn-voice-pause-play" class="voice-ctrl-btn primary" title="Pause / Resume">
+              <i id="voice-pause-play-icon" class="fa-solid fa-pause"></i>
+            </button>
+            <!-- Stop -->
+            <button type="button" id="btn-voice-stop" class="voice-ctrl-btn" title="Stop Reading">
+              <i class="fa-solid fa-stop"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- AI Creator Workspace Toolbar -->
+        <div id="ai-creator-toolbar" class="ai-creator-toolbar">
+          <div class="creator-toolbar-title">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i>
+            <span>Gemini AI Productivity Suite</span>
+          </div>
+          <div class="creator-toolbar-pills">
+            <button type="button" class="creator-pill-btn active" data-target="markdown-view">
+              <i class="fa-solid fa-file-invoice text-indigo-400"></i> AI Synthesis
+            </button>
+            <button type="button" class="creator-pill-btn" data-target="image-view">
+              <i class="fa-solid fa-image text-pink-400"></i> AI Image Gen
+            </button>
+            <button type="button" class="creator-pill-btn" data-target="slides-view">
+              <i class="fa-solid fa-file-powerpoint text-amber-500"></i> AI Slides / PPT
+            </button>
+            <button type="button" class="creator-pill-btn" data-target="docs-view">
+              <i class="fa-solid fa-file-word text-sky-400"></i> AI Docs
+            </button>
+            <button type="button" class="creator-pill-btn" data-target="sandbox-view">
+              <i class="fa-solid fa-laptop-code text-emerald-400"></i> AI App Sandbox
+            </button>
+          </div>
+        </div>
+
+        <!-- TAB PANEL 1: Standard AI Synthesis -->
+        <div id="panel-markdown-view" class="creator-tab-panel">
+          <div id="results-markdown" class="results-markdown-content"></div>
+        </div>
+
+        <!-- TAB PANEL 2: AI Image Generator -->
+        <div id="panel-image-view" class="creator-tab-panel hidden">
+          <div class="ai-creator-card">
+            <div class="creator-card-header">
+              <h3>🎨 AI Text-to-Image Generator</h3>
+              <p>Generate eye-catching pictures, designs, and artwork instantly using Gemini</p>
+            </div>
+            <div class="creator-card-body">
+              <form id="image-gen-form" class="creator-inline-form">
+                <input type="text" id="image-gen-input" placeholder="Describe the image you want to generate..." required />
+                <select id="image-gen-style">
+                  <option value="photorealistic">Photo-realistic</option>
+                  <option value="cinematic">Cinematic</option>
+                  <option value="digital-art">Digital Art</option>
+                  <option value="anime">Anime / Manga</option>
+                  <option value="minimalist-vector">Vector / Icon</option>
+                  <option value="3d-render">3D Render</option>
+                </select>
+                <button type="submit" id="btn-run-image-gen" class="btn-creator-action">
+                  <i class="fa-solid fa-wand-magic"></i> Generate
+                </button>
+              </form>
+              <div id="image-gen-output-container" class="image-gen-output-container">
+                <div class="image-gen-placeholder">
+                  <i class="fa-solid fa-image-portrait text-4xl text-gray-600 mb-2"></i>
+                  <span>Your generated image will appear here</span>
+                </div>
+              </div>
+              <!-- Image Editor UI -->
+              <div id="image-editor-container" class="hidden mt-4">
+                  <canvas id="image-editor-canvas"></canvas>
+                  <div class="flex gap-2 mt-2">
+                    <button type="button" id="btn-editor-draw" class="btn-creator-action secondary"><i class="fa-solid fa-pen"></i> Draw</button>
+                    <button type="button" id="btn-editor-clear" class="btn-creator-action secondary"><i class="fa-solid fa-trash"></i> Clear</button>
+                    <button type="button" id="btn-editor-save" class="btn-creator-action"><i class="fa-solid fa-check"></i> Apply Edits</button>
+                    <button type="button" id="btn-editor-cancel" class="btn-creator-action secondary">Cancel</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB PANEL 3: AI Slides / PPT / PDF -->
+        <div id="panel-slides-view" class="creator-tab-panel hidden">
+          <div class="ai-creator-card">
+            <div class="creator-card-header">
+              <h3>📊 AI Interactive Presentation & Slide Deck</h3>
+              <p>Draft professional presentations with dynamic slides. Preview live and export as PPT outlines or print to PDF</p>
+            </div>
+            <div class="creator-card-body">
+              <div class="slides-action-bar">
+                <button type="button" id="btn-build-slides" class="btn-creator-action">
+                  <i class="fa-solid fa-bolt"></i> Generate Slides for this Topic
+                </button>
+                <button type="button" id="btn-download-slides-html" class="btn-creator-action secondary hidden">
+                  <i class="fa-solid fa-download"></i> Download HTML Presentation
+                </button>
+                <button type="button" id="btn-print-slides-pdf" class="btn-creator-action secondary hidden">
+                  <i class="fa-solid fa-file-pdf"></i> Export PDF / Print
+                </button>
+                <button type="button" id="btn-download-slides-pptx" class="btn-creator-action secondary hidden">
+                  <i class="fa-solid fa-file-powerpoint"></i> Export PPTX (Outline)
+                </button>
+              </div>
+              
+              <!-- Live Slide Theater -->
+              <div id="slide-theater-container" class="slide-theater-container hidden">
+                <div class="slide-theater-frame">
+                  <div id="slide-content-pane" class="slide-content-pane">
+                    <!-- Dynamic slide content goes here -->
+                  </div>
+                </div>
+                <div class="slide-theater-controls">
+                  <button type="button" id="btn-prev-slide" class="slide-nav-btn"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+                  <span id="slide-counter-label">Slide 1 of 5</span>
+                  <button type="button" id="btn-next-slide" class="slide-nav-btn">Next <i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+              </div>
+              
+              <div id="slides-loading-indicator" class="slides-loading-indicator hidden">
+                <i class="fa-solid fa-spinner fa-spin text-amber-500 text-3xl mb-2"></i>
+                <span>Gemini is modeling your slides structure...</span>
+              </div>
+              <div id="slides-placeholder-box" class="slides-placeholder-box">
+                <i class="fa-solid fa-file-powerpoint text-4xl text-gray-600 mb-2"></i>
+                <span>Click "Generate Slides" to convert this topic into a presentation slide deck</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB PANEL 4: AI Docs -->
+        <div id="panel-docs-view" class="creator-tab-panel hidden">
+          <div class="ai-creator-card">
+            <div class="creator-card-header">
+              <h3>📝 AI Formatted Document & Project Hub</h3>
+              <p>Compile and format this topic into a structured document and downloadable Word-compatible file</p>
+            </div>
+            <div class="creator-card-body">
+              <div class="docs-action-bar">
+                <button type="button" id="btn-format-docs" class="btn-creator-action">
+                  <i class="fa-solid fa-signature"></i> Format Professional Report
+                </button>
+                <button type="button" id="btn-download-word" class="btn-creator-action secondary hidden">
+                  <i class="fa-solid fa-file-word"></i> Download .DOC File
+                </button>
+              </div>
+              <div id="docs-output-container" class="docs-output-container">
+                <div id="docs-preview-area" class="docs-preview-area hidden">
+                  <!-- Dynamic structured document -->
+                </div>
+                <div id="docs-placeholder-box" class="docs-placeholder-box">
+                  <i class="fa-solid fa-file-lines text-4xl text-gray-600 mb-2"></i>
+                  <span>Click "Format Professional Report" to build a structured project doc</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB PANEL 5: AI App Sandbox -->
+        <div id="panel-sandbox-view" class="creator-tab-panel hidden">
+          <div class="ai-creator-card">
+            <div class="creator-card-header">
+              <h3>💻 AI App Builder Sandbox</h3>
+              <p>Build fully operational, single-file HTML/CSS/JS apps with Gemini, run them instantly in a live preview sandbox, and download them!</p>
+            </div>
+            <div class="creator-card-body">
+              <form id="app-builder-form" class="creator-inline-form">
+                <input type="text" id="app-builder-input" placeholder="What app do you want to build? (e.g. Pomodoro timer, reaction speed game...)" required />
+                <button type="submit" id="btn-build-app" class="btn-creator-action">
+                  <i class="fa-solid fa-laptop-code"></i> Build App
+                </button>
+              </form>
+              
+              <div id="sandbox-loading-indicator" class="sandbox-loading-indicator hidden">
+                <i class="fa-solid fa-circle-nodes fa-spin text-emerald-400 text-3xl mb-2"></i>
+                <span>Gemini is drafting app components and scripting animations...</span>
+              </div>
+
+              <div id="sandbox-workspace" class="sandbox-workspace hidden">
+                <!-- Tabs for Editor vs Live Preview -->
+                <div class="sandbox-header-tabs">
+                  <button type="button" class="sandbox-tab-btn active" data-tab="preview">
+                    <i class="fa-solid fa-play text-emerald-400"></i> Live Interactive Run
+                  </button>
+                  <button type="button" class="sandbox-tab-btn" data-tab="code">
+                    <i class="fa-solid fa-code text-sky-400"></i> View Source Code
+                  </button>
+                  <button type="button" id="btn-download-app-html" class="sandbox-action-btn ml-auto">
+                    <i class="fa-solid fa-download"></i> Download App HTML
+                  </button>
+                </div>
+
+                <!-- Preview Pane -->
+                <div id="sandbox-preview-pane" class="sandbox-pane">
+                  <iframe id="sandbox-iframe" sandbox="allow-scripts allow-modals"></iframe>
+                </div>
+
+                <!-- Code Pane -->
+                <div id="sandbox-code-pane" class="sandbox-pane hidden">
+                  <textarea id="sandbox-code-textarea" readonly></textarea>
+                </div>
+              </div>
+
+              <div id="sandbox-placeholder-box" class="sandbox-placeholder-box">
+                <i class="fa-solid fa-box-archive text-4xl text-gray-600 mb-2"></i>
+                <span>Type any app name or description above to build and test it instantly</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grounding Images Gallery -->
+        <div id="results-images-wrapper" class="results-block hidden">
+          <div class="results-block-heading" style="margin-bottom: 12px;">
+            <i class="fa-solid fa-images text-emerald-400"></i>
+            <span>Visual Grounding & Topic Images</span>
+          </div>
+          <div id="results-images-grid" class="yeti-images-grid"></div>
+        </div>
+
+        <!-- Verified Web Sources Grid -->
+        <div id="results-sources-wrapper" class="results-block">
+          <div class="results-block-heading">
+            <i class="fa-solid fa-link text-sky-400"></i>
+            <span>Verified Web Sources (<span id="results-sources-count">0</span>)</span>
+          </div>
+          <div id="results-sources-grid" class="sources-card-grid"></div>
+        </div>
+
+        <!-- Google Search Grounding Queries -->
+        <div id="results-queries-wrapper" class="results-block">
+          <div class="results-block-heading">
+            <i class="fa-solid fa-satellite-dish text-indigo-400"></i>
+            <span>Search Grounding Signals</span>
+          </div>
+          <div id="results-queries-pills" class="queries-pill-container"></div>
+        </div>
+
+        <!-- Suggested Follow-ups -->
+        <div id="results-followups-wrapper" class="results-block">
+          <div class="results-block-heading">
+            <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i>
+            <span>Suggested Inquiries</span>
+          </div>
+          <div id="results-followups-list" class="followups-container"></div>
+        </div>
+
+        <!-- Live Chat & Follow-ups Workspace -->
+        <div id="results-chat-wrapper" class="results-block">
+          <div class="results-block-heading" style="margin-bottom: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px;">
+            <i class="fa-solid fa-comments text-violet-400"></i>
+            <span>Live Chat & Continuous Follow-ups</span>
+          </div>
+          
+          <!-- Live conversational feed -->
+          <div id="results-chat-feed" class="results-chat-feed">
+            <!-- Dynamic follow-up exchanges appear here -->
+          </div>
+          
+          <!-- Typing loading state -->
+          <div id="chat-typing-indicator" class="chat-typing-indicator hidden">
+            <div class="typing-bubble">
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+              <span class="typing-dot"></span>
+            </div>
+            <span class="typing-text">Gemini is writing...</span>
+          </div>
+
+          <!-- Chat inputs -->
+          <form id="chat-composer-form" class="chat-composer-form" autocomplete="off">
+            <input type="text" id="chat-composer-input" placeholder="Ask a relatable question or continue the conversation..." required />
+            <button type="submit" id="btn-submit-chat" title="Send continuous question">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Results Footer Strip -->
+      <div class="results-window-footer">
+        <div class="results-footer-info">
+          <label class="auto-speak-toggle" title="Automatically read future search answers aloud with AI voice">
+            <input type="checkbox" id="toggle-auto-speak" />
+            <span class="auto-speak-slider"></span>
+            <span class="auto-speak-label"><i class="fa-solid fa-volume-high text-xs"></i> Auto-speak answers</span>
+          </label>
+          <button type="button" id="btn-open-voice-settings-footer" class="btn-voice-settings-footer" title="Choose AI Voice Persona & Speed">
+            <i class="fa-solid fa-sliders text-indigo-400"></i> Voice Personas
+          </button>
+          <span id="results-history-indicator">
+            <i class="fa-solid fa-cloud-arrow-up text-emerald-400"></i> Saved to session history
+          </span>
+        </div>
+        <div class="results-footer-btns">
+          <button type="button" class="btn-subtle close-results-trigger">Close</button>
+          <button type="button" id="btn-results-new-search" class="btn-accent">New Search</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 2: SEARCH HISTORY & SAVED BOOKMARKS DRAWER
+       ==================================================================== -->
+  <div id="history-drawer-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="history-drawer-title">
+    <div class="modal-backdrop close-history-trigger"></div>
+    <div class="drawer-panel">
+      <!-- Drawer Header -->
+      <div class="drawer-header">
+        <div class="drawer-tabs">
+          <button type="button" id="tab-btn-history" class="drawer-tab active">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>History (<span id="history-tab-count">0</span>)</span>
+          </button>
+          <button type="button" id="tab-btn-bookmarks" class="drawer-tab">
+            <i class="fa-solid fa-bookmark"></i>
+            <span>Bookmarks (<span id="bookmarks-tab-count">0</span>)</span>
+          </button>
+        </div>
+        <button type="button" class="drawer-close-btn close-history-trigger" title="Close drawer">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Search & Controls -->
+      <div class="drawer-filter-bar">
+        <div class="drawer-search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="drawer-filter-input" placeholder="Filter history & bookmarks..." />
+        </div>
+        <button type="button" id="btn-clear-history" class="drawer-clear-btn" title="Clear All History">
+          <i class="fa-regular fa-trash-can"></i>
+        </button>
+      </div>
+
+      <!-- Drawer Content Scroll Area -->
+      <div class="drawer-body">
+        <!-- History List View -->
+        <div id="history-list-view" class="drawer-items-list"></div>
+
+        <!-- Bookmarks List View -->
+        <div id="bookmarks-list-view" class="drawer-items-list hidden"></div>
+
+        <!-- Empty State -->
+        <div id="drawer-empty-state" class="drawer-empty hidden">
+          <div class="empty-icon">
+            <i class="fa-regular fa-folder-open"></i>
+          </div>
+          <h4 id="empty-state-title">No history records yet</h4>
+          <p id="empty-state-desc">Ask Gemini or OpenAI anything from the composer to see your grounded searches here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 3: AUTHENTICATION (SIGN IN & REGISTER) - YETI CHARACTER CARD
+       ==================================================================== -->
+  <div id="auth-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="auth-modal-title">
+    <div class="modal-backdrop close-auth-trigger yeti-backdrop-sky"></div>
+    
+    <div class="yeti-auth-card" id="yeti-auth-dialog">
+      <button type="button" class="dialog-close-btn close-auth-trigger" title="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- LEFT COLUMN: Scenic Animated Yeti Character Stage -->
+      <div class="yeti-stage-col" id="yeti-stage">
+        <!-- Sunbeam and floating atmospheric clouds -->
+        <div class="yeti-sky-atmosphere">
+          <div class="yeti-sun-glow"></div>
+          <div class="yeti-cloud-puff puff-1"></div>
+          <div class="yeti-cloud-puff puff-2"></div>
+          <div class="yeti-cloud-puff puff-3"></div>
+        </div>
+
+        <!-- Interactive Animated Yeti SVG Character with 3D Head & Pupil Tracking -->
+        <div class="yeti-svg-wrap" id="yeti-character-wrapper">
+          <svg id="yeti-interactive-svg" viewBox="0 0 360 420" class="yeti-svg" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <!-- Fur Body 3D Gradient -->
+              <radialGradient id="bodyFurGrad" cx="45%" cy="32%" r="65%">
+                <stop offset="0%" stop-color="#ffffff" />
+                <stop offset="65%" stop-color="#f1f5f9" />
+                <stop offset="90%" stop-color="#e2e8f0" />
+                <stop offset="100%" stop-color="#cbd5e1" />
+              </radialGradient>
+
+              <!-- Baby Blue Face Gradient -->
+              <linearGradient id="faceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#bae6fd" />
+                <stop offset="45%" stop-color="#93c5fd" />
+                <stop offset="100%" stop-color="#60a5fa" />
+              </linearGradient>
+
+              <!-- Eye Sclera Sphere Gradient -->
+              <radialGradient id="eyeScleraGrad" cx="38%" cy="35%" r="62%">
+                <stop offset="0%" stop-color="#ffffff" />
+                <stop offset="85%" stop-color="#f8fafc" />
+                <stop offset="100%" stop-color="#cbd5e1" />
+              </radialGradient>
+
+              <!-- Pupil Gradient -->
+              <radialGradient id="pupilGrad" cx="35%" cy="35%" r="60%">
+                <stop offset="0%" stop-color="#1e293b" />
+                <stop offset="70%" stop-color="#0f172a" />
+                <stop offset="100%" stop-color="#020617" />
+              </radialGradient>
+
+              <!-- Iris Rim Gradient -->
+              <linearGradient id="irisRim" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="100%" stop-color="#0284c7" />
+              </linearGradient>
+
+              <!-- Soft Drop Shadow Filter -->
+              <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+                <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.14" />
+              </filter>
+            </defs>
+
+            <!-- Rolling Green Meadow Hill -->
+            <path d="M -30 330 Q 110 295 240 310 Q 310 320 390 340 L 390 440 L -30 440 Z" fill="#4d7c0f" />
+            <path d="M -20 338 Q 120 305 240 318 Q 300 325 380 348 L 380 440 L -20 440 Z" fill="#65a30d" />
+            <!-- Grass Blade Accents -->
+            <path d="M 70 318 L 76 300 L 82 320 M 175 312 L 180 295 L 188 314 M 270 324 L 275 308 L 282 326" stroke="#a3e635" stroke-width="2" stroke-linecap="round" />
+
+            <!-- YETI BODY (Breathes gently) -->
+            <g id="yeti-body-group" class="yeti-body-anim">
+              <!-- Body Base (Plump furry shape) -->
+              <path d="M 95 220 C 65 260 65 340 120 355 C 160 365 210 360 245 340 C 275 315 270 260 240 220 C 215 195 120 195 95 220 Z" fill="url(#bodyFurGrad)" filter="url(#softShadow)" />
+              <!-- Chest Fur Texture -->
+              <path d="M 130 245 C 150 260 180 260 200 245 C 185 275 145 275 130 245 Z" fill="#ffffff" opacity="0.8" />
+              <path d="M 140 270 C 155 285 175 285 190 270 C 180 295 150 295 140 270 Z" fill="#ffffff" opacity="0.65" />
+
+              <!-- Left Arm (Resting on side) -->
+              <path d="M 98 230 C 70 250 55 285 70 315 C 80 330 95 320 95 305 C 85 280 95 255 110 240 Z" fill="url(#bodyFurGrad)" />
+
+              <!-- Right Arm (WAVING HIGH - Friendly greeting!) -->
+              <g id="yeti-waving-arm" class="yeti-waving-arm-anim">
+                <path d="M 230 225 C 265 205 285 170 295 135 C 300 125 315 130 312 145 C 300 180 275 230 235 245 Z" fill="url(#bodyFurGrad)" />
+                <!-- Fluffy Paw / Hand waving with fingers -->
+                <g transform="translate(295, 115)">
+                  <circle cx="12" cy="16" r="14" fill="#ffffff" />
+                  <circle cx="2" cy="4" r="5" fill="#f8fafc" />
+                  <circle cx="11" cy="0" r="5.2" fill="#ffffff" />
+                  <circle cx="21" cy="3" r="5" fill="#ffffff" />
+                  <circle cx="27" cy="11" r="4.8" fill="#f8fafc" />
+                  <ellipse cx="12" cy="17" rx="7" ry="5.5" fill="#bae6fd" opacity="0.5" />
+                </g>
+              </g>
+            </g>
+
+            <!-- YETI HEAD GROUP (Interactive 3D tilt, cursor & scroll tracking) -->
+            <g id="yeti-head-group" class="yeti-head-group">
+              <!-- Left Ear -->
+              <g id="yeti-ear-left">
+                <ellipse cx="92" cy="98" rx="18" ry="16" transform="rotate(-18 92 98)" fill="url(#bodyFurGrad)" />
+                <ellipse cx="94" cy="99" rx="10" ry="9" transform="rotate(-18 94 99)" fill="#fbcfe8" opacity="0.8" />
+              </g>
+              <!-- Right Ear -->
+              <g id="yeti-ear-right">
+                <ellipse cx="238" cy="98" rx="18" ry="16" transform="rotate(18 238 98)" fill="url(#bodyFurGrad)" />
+                <ellipse cx="236" cy="99" rx="10" ry="9" transform="rotate(18 236 99)" fill="#fbcfe8" opacity="0.8" />
+              </g>
+
+              <!-- Outer Fur Head with fluffy clouds & tufts -->
+              <path d="M 165 65 
+                       C 185 55 210 65 225 80 
+                       C 245 75 265 95 260 120 
+                       C 275 135 275 165 260 185 
+                       C 265 210 240 230 220 230 
+                       C 200 242 130 242 110 230 
+                       C 90 230 65 210 70 185 
+                       C 55 165 55 135 70 120 
+                       C 65 95 85 75 105 80 
+                       C 120 65 145 55 165 65 Z" 
+                    fill="url(#bodyFurGrad)" filter="url(#softShadow)" />
+
+              <!-- Top Fur Crown Tufts -->
+              <path d="M 155 68 C 165 46 175 46 180 66 Z" fill="#ffffff" />
+              <path d="M 142 72 C 150 54 160 54 165 72 Z" fill="#ffffff" />
+
+              <!-- Baby Blue Face Plate -->
+              <ellipse cx="165" cy="154" rx="64" ry="52" fill="url(#faceGrad)" />
+
+              <!-- Rosy Cheeks -->
+              <ellipse cx="120" cy="166" rx="12" ry="7" fill="#f472b6" opacity="0.35" />
+              <ellipse cx="210" cy="166" rx="12" ry="7" fill="#f472b6" opacity="0.35" />
+
+              <!-- LEFT EYE (Interactive Tracking & Blinking) -->
+              <g id="yeti-eye-l" class="yeti-eye-group">
+                <clipPath id="leftEyeClip">
+                  <ellipse cx="136" cy="144" rx="17" ry="17" />
+                </clipPath>
+                
+                <ellipse cx="136" cy="144" rx="17" ry="17" fill="url(#eyeScleraGrad)" />
+                
+                <!-- Left Pupil & Iris -->
+                <g id="yeti-pupil-l" clip-path="url(#leftEyeClip)" class="yeti-pupil-group">
+                  <circle cx="136" cy="144" r="10.5" fill="url(#irisRim)" />
+                  <circle cx="136" cy="144" r="8.5" fill="url(#pupilGrad)" />
+                  <circle cx="132.5" cy="140.5" r="3.8" fill="#ffffff" />
+                  <circle cx="139" cy="147" r="1.8" fill="rgba(255,255,255,0.9)" />
+                </g>
+
+                <!-- Left Eyelid (Blinking) -->
+                <ellipse id="yeti-eyelid-l" cx="136" cy="130" rx="19" ry="0" fill="#93c5fd" />
+              </g>
+
+              <!-- RIGHT EYE (Interactive Tracking & Blinking) -->
+              <g id="yeti-eye-r" class="yeti-eye-group">
+                <clipPath id="rightEyeClip">
+                  <ellipse cx="194" cy="144" rx="17" ry="17" />
+                </clipPath>
+                
+                <ellipse cx="194" cy="144" rx="17" ry="17" fill="url(#eyeScleraGrad)" />
+                
+                <!-- Right Pupil & Iris -->
+                <g id="yeti-pupil-r" clip-path="url(#rightEyeClip)" class="yeti-pupil-group">
+                  <circle cx="194" cy="144" r="10.5" fill="url(#irisRim)" />
+                  <circle cx="194" cy="144" r="8.5" fill="url(#pupilGrad)" />
+                  <circle cx="190.5" cy="140.5" r="3.8" fill="#ffffff" />
+                  <circle cx="197" cy="147" r="1.8" fill="rgba(255,255,255,0.9)" />
+                </g>
+
+                <!-- Right Eyelid (Blinking) -->
+                <ellipse id="yeti-eyelid-r" cx="194" cy="130" rx="19" ry="0" fill="#93c5fd" />
+              </g>
+
+              <!-- Eyebrows -->
+              <path id="yeti-brow-l" class="yeti-brow" d="M 122 124 Q 136 116 150 122" stroke="#1e293b" stroke-width="3" stroke-linecap="round" fill="none" />
+              <path id="yeti-brow-r" class="yeti-brow" d="M 180 122 Q 194 116 208 124" stroke="#1e293b" stroke-width="3" stroke-linecap="round" fill="none" />
+
+              <!-- Cute Blue Nose -->
+              <ellipse cx="165" cy="162" rx="5.5" ry="4.2" fill="#2563eb" />
+              <ellipse cx="164" cy="161" rx="2" ry="1.2" fill="#93c5fd" opacity="0.8" />
+
+              <!-- Cheerful Smile -->
+              <path id="yeti-mouth" d="M 148 174 Q 165 194 182 174" stroke="#1e293b" stroke-width="3.2" stroke-linecap="round" fill="none" />
+              <path id="yeti-tongue" d="M 158 181 Q 165 190 172 181 Z" fill="#fb7185" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Bottom Left Text Overlay: EXPLORE. LEARN. GROW. -->
+        <div class="yeti-card-motto">
+          <span class="motto-row">EXPLORE.</span>
+          <span class="motto-row">LEARN. GROW.</span>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Clean Modern Sign In / Sign Up Form -->
+      <div class="yeti-form-col">
+        <!-- Logo Emblem -->
+        <div class="yeti-brand-header">
+          <div class="yeti-brand-badge">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3c-4.97 0-9 4.03-9 9 0 2.12.74 4.07 1.97 5.61L4 21l3.39-.97C8.93 20.66 10.42 21 12 21c4.97 0 9-4.03 9-9s-4.03-9-9-9z"/>
+              <path d="M9 10h.01M15 10h.01M9.5 15c.83.67 1.67 1 2.5 1s1.67-.33 2.5-1"/>
+            </svg>
+          </div>
+          <span class="yeti-brand-name">YETI.AI</span>
+        </div>
+
+        <h3 id="auth-modal-title" class="yeti-heading">WELCOME BACK</h3>
+        <p id="auth-modal-desc" class="yeti-subheading">Enter your email and password to access your account</p>
+
+        <!-- Hidden tabs maintained for compatibility -->
+        <div class="auth-tabs hidden" style="display: none;">
+          <button type="button" id="auth-tab-login" class="auth-tab active">Sign In</button>
+          <button type="button" id="auth-tab-register" class="auth-tab">Create Account</button>
+        </div>
+
+        <!-- Notification Banner -->
+        <div id="auth-alert" class="auth-alert hidden"></div>
+
+        <!-- Sign In Form (Default Active) -->
+        <form id="form-login" class="yeti-form" onsubmit="return false;">
+          <div class="yeti-form-group">
+            <label for="login-email" class="yeti-label">Email</label>
+            <input type="email" id="login-email" class="yeti-input" placeholder="Enter your email" required autocomplete="email" />
+          </div>
+
+          <div class="yeti-form-group">
+            <label for="login-password" class="yeti-label">Password</label>
+            <div class="yeti-input-wrap">
+              <input type="password" id="login-password" class="yeti-input" placeholder="Enter your password" required autocomplete="current-password" />
+              <button type="button" id="btn-toggle-login-pwd" class="yeti-pwd-eye-btn" title="Toggle password visibility">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="yeti-options-row">
+            <label class="yeti-checkbox-wrap">
+              <input type="checkbox" id="login-remember" checked />
+              <span>Remember me</span>
+            </label>
+            <a href="#" id="btn-forgot-password" class="yeti-link-subtle">Forgot Password</a>
+          </div>
+
+          <button type="submit" id="btn-login-submit" class="yeti-btn-black">
+            <span>Sign In</span>
+          </button>
+
+          <!-- Secure Official Google Sign-In Button Container -->
+          <div id="google-signin-btn-container" class="yeti-btn-google-wrapper" style="width: 100%; display: flex; justify-content: center; min-height: 44px; margin: 8px 0;"></div>
+
+          <div class="yeti-switch-prompt">
+            Don't have an account? <button type="button" id="btn-switch-signup" class="yeti-switch-btn">Sign up</button>
+          </div>
+
+          <!-- Fast 1-Click Demo Login -->
+          <div class="yeti-demo-wrap">
+            <button type="button" id="btn-quick-demo-login" class="yeti-demo-fill-btn">
+              <i class="fa-solid fa-wand-magic-sparkles text-amber-500"></i> Auto-fill Demo Account
+            </button>
+          </div>
+        </form>
+
+        <!-- Register Form (Toggled when clicking Sign up) -->
+        <form id="form-register" class="yeti-form hidden" onsubmit="return false;">
+          <div class="yeti-form-group">
+            <label for="register-name" class="yeti-label">Full Name</label>
+            <input type="text" id="register-name" class="yeti-input" placeholder="Enter your full name" required autocomplete="name" />
+          </div>
+
+          <div class="yeti-form-group">
+            <label for="register-email" class="yeti-label">Email Address</label>
+            <input type="email" id="register-email" class="yeti-input" placeholder="Enter your email" required autocomplete="email" />
+          </div>
+
+          <div class="yeti-form-group">
+            <label for="register-password" class="yeti-label">Password</label>
+            <div class="yeti-input-wrap">
+              <input type="password" id="register-password" class="yeti-input" placeholder="At least 6 characters" minlength="6" required autocomplete="new-password" />
+              <button type="button" id="btn-toggle-register-pwd" class="yeti-pwd-eye-btn" title="Toggle password visibility">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" id="btn-register-submit" class="yeti-btn-black">
+            <span>Create Account</span>
+          </button>
+
+          <div class="yeti-switch-prompt">
+            Already have an account? <button type="button" id="btn-switch-signin" class="yeti-switch-btn">Sign in</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 4: ACTIVE AI MODELS STATUS & ARCHITECTURE
+       ==================================================================== -->
+  <div id="models-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="models-modal-title">
+    <div class="modal-backdrop close-models-trigger"></div>
+    <div class="models-dialog">
+      <button type="button" class="dialog-close-btn close-models-trigger" title="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="models-dialog-header">
+        <div class="models-dialog-icon">
+          <i class="fa-solid fa-microchip text-indigo-400"></i>
+        </div>
+        <div>
+          <h3 id="models-modal-title" class="models-dialog-title">Active AI Models & Grounding Architecture</h3>
+          <p class="models-dialog-subtitle">Server-side proxy with Google Search grounding and OpenAI synthesis</p>
+        </div>
+      </div>
+
+      <div class="models-cards-grid">
+        <!-- Gemini Card -->
+        <div class="model-spec-card active">
+          <div class="model-spec-top">
+            <div class="model-badge gemini">
+              <i class="fa-solid fa-bolt"></i> Google DeepMind
+            </div>
+            <span class="status-pill status-online">
+              <span class="pulse-dot"></span> Active & Grounded
+            </span>
+          </div>
+          <h4 class="model-title">Gemini 3.8 Flash</h4>
+          <p class="model-desc">
+            Primary search engine. Uses real-time Google Search Grounding to verify facts, retrieve fresh web documents, and cite authoritative sources.
+          </p>
+          <div class="model-features">
+            <div class="feature-item"><i class="fa-solid fa-check text-emerald-400"></i> Google Search Tool Grounding</div>
+            <div class="feature-item"><i class="fa-solid fa-check text-emerald-400"></i> Instant citation extraction</div>
+            <div class="feature-item"><i class="fa-solid fa-check text-emerald-400"></i> High speed inference (&lt;400ms)</div>
+          </div>
+        </div>
+
+        <!-- OpenAI Card -->
+        <div class="model-spec-card">
+          <div class="model-spec-top">
+            <div class="model-badge openai">
+              <i class="fa-solid fa-brain"></i> OpenAI
+            </div>
+            <span id="openai-status-pill" class="status-pill status-online">
+              <span class="pulse-dot"></span> Operational
+            </span>
+          </div>
+          <h4 class="model-title">OpenAI GPT-4o Mini</h4>
+          <p class="model-desc">
+            Secondary analytical engine. Excels in structured synthesis, step-by-step reasoning, and comparative research summaries.
+          </p>
+          <div class="model-features">
+            <div class="feature-item"><i class="fa-solid fa-check text-emerald-400"></i> Structured reasoning synthesis</div>
+            <div class="feature-item"><i class="fa-solid fa-check text-emerald-400"></i> Real-time web fallback support</div>
+            <div class="feature-item"><i class="fa-solid fa-check text-emerald-400"></i> Graceful failover protection</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="models-server-telemetry">
+        <div class="telemetry-item">
+          <span class="telem-label">Server Uptime</span>
+          <span id="telem-uptime" class="telem-value">Active</span>
+        </div>
+        <div class="telemetry-item">
+          <span class="telem-label">Registered Accounts</span>
+          <span id="telem-users" class="telem-value">0</span>
+        </div>
+        <div class="telemetry-item">
+          <span class="telem-label">Searches Stored</span>
+          <span id="telem-history" class="telem-value">0</span>
+        </div>
+      </div>
+
+      <!-- Real-time Grounding Latency Telemetry -->
+      <div class="grounding-telemetry-panel">
+        <div class="panel-header">
+          <span class="panel-title">
+            <i class="fa-solid fa-gauge-high text-emerald-400"></i> 
+            <span>Grounding Operations Telemetry</span>
+          </span>
+          <span class="pulse-indicator">
+            <span class="pulse-dot"></span>
+            <span>Streaming Live</span>
+          </span>
+        </div>
+        <div class="telemetry-grid">
+          <div class="telem-metric-card">
+            <span class="metric-value text-emerald-400" id="telem-p99">1280 ms</span>
+            <span class="metric-label">p99 Latency</span>
+          </div>
+          <div class="telem-metric-card">
+            <span class="metric-value text-indigo-400" id="telem-avg">1050 ms</span>
+            <span class="metric-label">Average Latency</span>
+          </div>
+          <div class="telem-metric-card">
+            <span class="metric-value text-amber-400" id="telem-requests">14 ops</span>
+            <span class="metric-label">Total Logs</span>
+          </div>
+        </div>
+        
+        <div class="telemetry-visualizer">
+          <div class="visualizer-bar-chart" id="telem-bar-chart">
+            <!-- Dynamically populated in main.js -->
+          </div>
+          <div class="visualizer-labels">
+            <span>Past Grounding Inferences</span>
+            <span class="text-emerald-400">Real-time p99 response threshold</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 5: ADD WEB LINK ATTACHMENT MODAL
+       ==================================================================== -->
+  <div id="link-attach-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="link-modal-title">
+    <div class="modal-backdrop close-link-modal-trigger"></div>
+    <div class="link-attach-dialog">
+      <button type="button" class="dialog-close-btn close-link-modal-trigger" title="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="link-dialog-header">
+        <div class="link-dialog-icon">
+          <i class="fa-solid fa-link text-indigo-400"></i>
+        </div>
+        <div>
+          <h3 id="link-modal-title" class="link-dialog-title">Attach Web Link or URL</h3>
+          <p class="link-dialog-subtitle">Include live URLs or web documentation for Gemini & OpenAI research analysis</p>
+        </div>
+      </div>
+
+      <form id="form-attach-link" class="link-attach-form" onsubmit="return false;">
+        <div class="link-form-group">
+          <label for="input-attach-url" class="link-form-label">Web URL / Link</label>
+          <div class="link-input-wrap">
+            <i class="fa-solid fa-globe link-input-icon"></i>
+            <input
+              type="url"
+              id="input-attach-url"
+              class="link-text-input"
+              placeholder="https://example.com/article-or-documentation"
+              required
+              autocomplete="url"
+            />
+          </div>
+        </div>
+
+        <div class="link-form-group">
+          <label for="input-attach-label" class="link-form-label">Title / Note (Optional)</label>
+          <input
+            type="text"
+            id="input-attach-label"
+            class="link-text-input"
+            placeholder="e.g. Q3 Earnings Report / Reference Spec"
+          />
+        </div>
+
+        <div class="link-modal-actions">
+          <button type="button" class="link-btn-cancel close-link-modal-trigger">Cancel</button>
+          <button type="submit" id="btn-save-link-attachment" class="link-btn-submit">
+            <i class="fa-solid fa-plus"></i>
+            <span>Add Link Attachment</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       MODAL 6: VOICE ASSISTANT & PERSONA SETTINGS MODAL
+       ==================================================================== -->
+  <div id="voice-settings-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="voice-settings-modal-title">
+    <div class="modal-backdrop close-voice-settings-trigger"></div>
+    <div class="voice-settings-dialog">
+      <button type="button" class="dialog-close-btn close-voice-settings-trigger" title="Close Settings">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Dialog Header -->
+      <div class="voice-dialog-header">
+        <div class="voice-dialog-icon">
+          <i class="fa-solid fa-microphone-lines text-purple-400"></i>
+        </div>
+        <div>
+          <h3 id="voice-settings-modal-title" class="voice-dialog-title">AI Voice Assistant & Persona</h3>
+          <p class="voice-dialog-subtitle">Customize voice delivery style, pace, pitch, and personas for reading Gemini answers</p>
+        </div>
+      </div>
+
+      <div class="voice-dialog-body">
+        <!-- Section: Persona Selection -->
+        <div class="voice-settings-section">
+          <div class="voice-section-title">
+            <i class="fa-solid fa-user-astronaut text-amber-400"></i>
+            <span>Select AI Voice Persona</span>
+          </div>
+          <p class="voice-section-hint">Choose how the voice assistant articulates explanations and insights:</p>
+
+          <div class="persona-cards-grid" id="persona-cards-grid">
+            <!-- Persona 1: Professional (Default) -->
+            <div class="persona-card" data-persona="professional">
+              <div class="persona-card-header">
+                <div class="persona-avatar bg-indigo-500/20 text-indigo-400 border border-indigo-500/40">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="persona-info">
+                  <div class="persona-name">Professional</div>
+                  <div class="persona-badge">Broadcast Clarity</div>
+                </div>
+                <div class="persona-radio-indicator">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+              <p class="persona-desc">Authoritative, balanced, and articulate delivery. Ideal for research, deep dives, and technical facts.</p>
+              <div class="persona-meta">
+                <span><i class="fa-solid fa-gauge-high"></i> 1.0x Pace</span>
+                <span><i class="fa-solid fa-sliders"></i> Standard Pitch</span>
+                <button type="button" class="btn-persona-preview" data-persona="professional" title="Hear voice sample">
+                  <i class="fa-solid fa-play"></i> Sample
+                </button>
+              </div>
+            </div>
+
+            <!-- Persona 2: Calm -->
+            <div class="persona-card" data-persona="calm">
+              <div class="persona-card-header">
+                <div class="persona-avatar bg-teal-500/20 text-teal-400 border border-teal-500/40">
+                  <i class="fa-solid fa-spa"></i>
+                </div>
+                <div class="persona-info">
+                  <div class="persona-name">Calm & Mindful</div>
+                  <div class="persona-badge">Soothing Tone</div>
+                </div>
+                <div class="persona-radio-indicator">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+              <p class="persona-desc">Relaxed, soothing, and serene pace. Great for calm focus, evening reading, and stress-free comprehension.</p>
+              <div class="persona-meta">
+                <span><i class="fa-solid fa-gauge-high"></i> 0.9x Gentle</span>
+                <span><i class="fa-solid fa-sliders"></i> Soft Pitch</span>
+                <button type="button" class="btn-persona-preview" data-persona="calm" title="Hear voice sample">
+                  <i class="fa-solid fa-play"></i> Sample
+                </button>
+              </div>
+            </div>
+
+            <!-- Persona 3: Energetic -->
+            <div class="persona-card" data-persona="energetic">
+              <div class="persona-card-header">
+                <div class="persona-avatar bg-amber-500/20 text-amber-400 border border-amber-500/40">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="persona-info">
+                  <div class="persona-name">Energetic & Upbeat</div>
+                  <div class="persona-badge">Dynamic Momentum</div>
+                </div>
+                <div class="persona-radio-indicator">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+              <p class="persona-desc">Vibrant, lively, and enthusiastic inflection. Keeps you motivated with engaging, dynamic tempo.</p>
+              <div class="persona-meta">
+                <span><i class="fa-solid fa-gauge-high"></i> 1.1x Lively</span>
+                <span><i class="fa-solid fa-sliders"></i> High Inflection</span>
+                <button type="button" class="btn-persona-preview" data-persona="energetic" title="Hear voice sample">
+                  <i class="fa-solid fa-play"></i> Sample
+                </button>
+              </div>
+            </div>
+
+            <!-- Persona 4: Storyteller -->
+            <div class="persona-card" data-persona="storyteller">
+              <div class="persona-card-header">
+                <div class="persona-avatar bg-purple-500/20 text-purple-400 border border-purple-500/40">
+                  <i class="fa-solid fa-book-open-reader"></i>
+                </div>
+                <div class="persona-info">
+                  <div class="persona-name">Storyteller</div>
+                  <div class="persona-badge">Warm Resonance</div>
+                </div>
+                <div class="persona-radio-indicator">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+              <p class="persona-desc">Warm, rich timbre with expressive cadence. Makes history, biographies, and articles sound like a podcast.</p>
+              <div class="persona-meta">
+                <span><i class="fa-solid fa-gauge-high"></i> 0.95x Rich</span>
+                <span><i class="fa-solid fa-sliders"></i> Deep Pitch</span>
+                <button type="button" class="btn-persona-preview" data-persona="storyteller" title="Hear voice sample">
+                  <i class="fa-solid fa-play"></i> Sample
+                </button>
+              </div>
+            </div>
+
+            <!-- Persona 5: Concise -->
+            <div class="persona-card" data-persona="concise">
+              <div class="persona-card-header">
+                <div class="persona-avatar bg-rose-500/20 text-rose-400 border border-rose-500/40">
+                  <i class="fa-solid fa-stopwatch-20"></i>
+                </div>
+                <div class="persona-info">
+                  <div class="persona-name">Concise Executive</div>
+                  <div class="persona-badge">Fast-Track Briefing</div>
+                </div>
+                <div class="persona-radio-indicator">
+                  <i class="fa-solid fa-circle-check"></i>
+                </div>
+              </div>
+              <p class="persona-desc">High-tempo, crisp summary delivery for rapid comprehension and high-speed executive briefings.</p>
+              <div class="persona-meta">
+                <span><i class="fa-solid fa-gauge-high"></i> 1.25x Swift</span>
+                <span><i class="fa-solid fa-sliders"></i> Sharp Pitch</span>
+                <button type="button" class="btn-persona-preview" data-persona="concise" title="Hear voice sample">
+                  <i class="fa-solid fa-play"></i> Sample
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Fine Tuning Controls -->
+        <div class="voice-settings-tuning-grid">
+          <!-- Voice Speed -->
+          <div class="tuning-card">
+            <div class="tuning-card-header">
+              <label class="tuning-label"><i class="fa-solid fa-gauge text-sky-400"></i> Narration Speed</label>
+              <span id="tuning-speed-display" class="tuning-val-badge">1.0x</span>
+            </div>
+            <div class="speed-buttons-row" id="tuning-speed-pills">
+              <button type="button" class="speed-opt-btn" data-speed="0.8">0.8x</button>
+              <button type="button" class="speed-opt-btn active" data-speed="1.0">1.0x</button>
+              <button type="button" class="speed-opt-btn" data-speed="1.25">1.25x</button>
+              <button type="button" class="speed-opt-btn" data-speed="1.5">1.5x</button>
+              <button type="button" class="speed-opt-btn" data-speed="2.0">2.0x</button>
+            </div>
+          </div>
+
+          <!-- Voice Pitch -->
+          <div class="tuning-card">
+            <div class="tuning-card-header">
+              <label for="tuning-pitch-slider" class="tuning-label"><i class="fa-solid fa-wave-square text-emerald-400"></i> Voice Pitch Tuning</label>
+              <span id="tuning-pitch-display" class="tuning-val-badge">1.0 (Normal)</span>
+            </div>
+            <div class="slider-control-row">
+              <span class="slider-bound">Low</span>
+              <input type="range" id="tuning-pitch-slider" min="0.7" max="1.4" step="0.05" value="1.0" class="tuning-slider" />
+              <span class="slider-bound">High</span>
+              <button type="button" id="btn-reset-pitch" class="btn-reset-slider" title="Reset pitch to persona default">
+                <i class="fa-solid fa-rotate-left"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Browser Voice Selection -->
+          <div class="tuning-card full-span">
+            <div class="tuning-card-header">
+              <label for="tuning-voice-select" class="tuning-label"><i class="fa-solid fa-headset text-purple-400"></i> Preferred Browser Synthesis Voice</label>
+              <span class="tuning-hint-badge">Auto-matched with Persona</span>
+            </div>
+            <select id="tuning-voice-select" class="tuning-select">
+              <option value="auto">✨ Smart Auto (Best natural match for Persona & Language)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Section: Interactive Live Test Bar -->
+        <div class="voice-test-bar">
+          <div class="voice-test-info">
+            <i class="fa-solid fa-sparkles text-amber-400"></i>
+            <span>Test the current voice persona with live synthesis</span>
+          </div>
+          <button type="button" id="btn-test-current-voice" class="btn-test-voice-action">
+            <i id="test-voice-icon" class="fa-solid fa-volume-high"></i>
+            <span id="test-voice-label">Play Test Sample</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Dialog Footer -->
+      <div class="voice-dialog-footer">
+        <div class="voice-footer-left">
+          <span class="text-xs text-gray-400">Preferences automatically saved for this browser</span>
+        </div>
+        <button type="button" class="btn-accent close-voice-settings-trigger">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Immersive Lightbox Image Preview Modal -->
+  <div id="image-lightbox-modal" class="yeti-lightbox-modal hidden">
+    <button type="button" id="btn-close-lightbox" class="lightbox-close-btn">&times;</button>
+    <div class="lightbox-content-container">
+      <img id="lightbox-img" src="" alt="High resolution preview" referrerPolicy="no-referrer" />
+      <div id="lightbox-caption" class="lightbox-caption-text"></div>
+    </div>
+  </div>
+
+  <!-- Toast notifications container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,660 @@
+{
+  "users": [
+    {
+      "id": "5ef37204-fcea-4934-a37e-a62e5cdb89d0",
+      "name": "s",
+      "email": "dip70665@gmail.com",
+      "passwordHash": "$2b$10$IYIsgMLgnHQLuFsy9APKtO7MGKirlj0RPVo5f83yXHj2qcr6DKKjG",
+      "createdAt": "2026-09-10T13:33:21.795Z",
+      "preferences": {
+        "defaultEngine": "gemini",
+        "theme": "system"
+      }
+    },
+    {
+      "id": "c9f2d395-cb70-4c4d-993e-186b2b0bcc8f",
+      "name": "Alex Rivers",
+      "email": "alex@example.com",
+      "passwordHash": "$2b$10$bOfQnzdSd7seze8AJJkaYuLFm.b99sT4NXNGbNPU8lZaCsjh.e4/i",
+      "createdAt": "2026-09-10T13:36:00.081Z",
+      "preferences": {
+        "defaultEngine": "gemini",
+        "theme": "system"
+      }
+    },
+    {
+      "id": "c026e3d8-a7b5-4f5f-a675-f030185a33cf",
+      "name": "Alex Explorer",
+      "email": "test_1789049538644@example.com",
+      "passwordHash": "$2b$10$3dFCSanLHLWD5g4/hAP6KugHim8WSitkmZRVYtXtmyt1obfkoCOaG",
+      "createdAt": "2026-09-10T14:12:18.920Z",
+      "preferences": {
+        "defaultEngine": "gemini",
+        "theme": "system"
+      }
+    }
+  ],
+  "sessions": [
+    {
+      "token": "a4eca9f6a0c083a88576d17b00295e004e6eddce2e57dd8bf729db269685a58e",
+      "userId": "5ef37204-fcea-4934-a37e-a62e5cdb89d0",
+      "createdAt": "2026-09-10T13:33:21.795Z",
+      "expiresAt": "2026-10-10T13:33:21.795Z"
+    },
+    {
+      "token": "a16e1d7be41f409b54f4a0d7b0627d60b84cc3aeb74522f7d3b961d35cd41856",
+      "userId": "c9f2d395-cb70-4c4d-993e-186b2b0bcc8f",
+      "createdAt": "2026-09-10T13:36:00.081Z",
+      "expiresAt": "2026-10-10T13:36:00.081Z"
+    },
+    {
+      "token": "5c3b10d404ef8bfd4a17d75d5a61964b12a694e8b8d74a5ad00cf7cd956aba93",
+      "userId": "c9f2d395-cb70-4c4d-993e-186b2b0bcc8f",
+      "createdAt": "2026-09-10T13:36:03.131Z",
+      "expiresAt": "2026-10-10T13:36:03.131Z"
+    },
+    {
+      "token": "c035efb0f8656bdbd642bc1b233d73e89f8c14c177090c9c9d69900958f9a0b1",
+      "userId": "c026e3d8-a7b5-4f5f-a675-f030185a33cf",
+      "createdAt": "2026-09-10T14:12:18.921Z",
+      "expiresAt": "2026-10-10T14:12:18.921Z"
+    }
+  ],
+  "history": [
+    {
+      "id": "d10d52c6-72e9-4d0a-8af6-feaa390c8467",
+      "query": "Brief summary of theory of relativity",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T14:12:49.571Z",
+      "summaryPreview": "> 💡 Notice: OpenAI account has no credits remaining. Search completed seamlessly with Gemini AI and live web grounding.\n\nAlbert Einstein’s theory of re...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "General relativity - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/General_relativity"
+        },
+        {
+          "title": "Criticism of the theory of relativity - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Criticism_of_the_theory_of_relativity"
+        },
+        {
+          "title": "Albert Einstein - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Albert_Einstein"
+        },
+        {
+          "title": "Luminiferous aether - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Luminiferous_aether"
+        },
+        {
+          "title": "Understand Albert Einstein's theory of relativity, about what is absolute and not relative - Britannica",
+          "uri": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNDRXNm5rX2R1eXBOR2JKVjRScF9YZTdIQV96NjlpeFZTVm53M3d5Mm5qWUhnQ3A2NjBQSVE1dERDQ1JzUUVmcWFFUjFXTTExSlRKbFp3d3p3TWJ6Z3lFNXNaNU5PY2h4NHZ1eFQtSGJfbkQ4TkZYYWtJZ3MtcDJFU2NHUmpIT0RxMkdIZkJwUQ?oc=5"
+        },
+        {
+          "title": "A very brief history of relativity - Physics World",
+          "uri": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1Va1A3eU94d2x1bVFKZlFINzVuSGtJTzNpUHJBQjI3RFY5dlZjalctd1BKRFZQeHhlaUVRV2d1aEFaVUxsS3FSR3VCSHhNLUVrZ2toNUJOWmZ6TndCWlF5aGV6dlNsaDg1NHFPT1MxMA?oc=5"
+        },
+        {
+          "title": "Albert Einstein - Physics, Relativity, Nobel Prize - Britannica",
+          "uri": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1OWV9FRldYbUZwZGY0bG50MUd5OHFjNlIza0J0OHoxa3dtWjNHV2NKdWxNeEFXanRVWnZaQkdVaU12UE9zNGJrTDI1RnQ4amE0d1pzZVJyR20zMzVhUndPbXIwX0lrUV9hYlNv?oc=5"
+        },
+        {
+          "title": "100 years of General Relativity - LISA Pathfinder - Science Portal - ESA Science & Technology",
+          "uri": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOREFPREVBTjJfX2FTM0VHanpvVU9Ka1VnQi1nRjVxZThBb29NTmtQa0huNXFUZGFfbWtVd0pBWkJrSHlDaThHdjUyT2hwQ0U1Z1o5bENPNnVQZVpIT1RQLVlseWw3cGZscGoyVGwzbGN6amNDVmVXV2RUb185UWo1c2ZneUphQQ?oc=5"
+        }
+      ],
+      "fullText": "> 💡 **Notice**: OpenAI account has no credits remaining. Search completed seamlessly with **Gemini AI** and live web grounding.\n\nAlbert Einstein’s theory of relativity is a foundational framework in physics that revolutionized our understanding of space, time, gravity, and the universe. It is composed of two distinct but interconnected theories published in the early 20th century: Special Relativity and General Relativity.\n\n### Special Relativity (1905)\nSpecial relativity introduced a paradigm shift by positing that the laws of physics are the same for all non-accelerating observers and that the speed of light in a vacuum is constant, regardless of the motion of the light source or the observer.\n*   **Space and Time:** It abandoned the concept of absolute space and time, demonstrating that they are linked as a four-dimensional continuum known as \"spacetime.\"\n*   **Time Dilation and Length Contraction:** Measurements of time and distance change depending on the observer's velocity.\n*   **Mass-Energy Equivalence:** This theory gave rise to the world’s most famous equation, **$E=mc^2$**, which reveals that mass and energy are interchangeable.\n\n### General Relativity (1915)\nGeneral relativity extended the concepts of the special theory to include gravity and acceleration. It redefines gravity not as a traditional \"force\" as described by Newton, but as a physical property of the universe.\n*   **The Curvature of Spacetime:** Einstein proposed that massive objects, such as stars and planets, cause a distortion or \"curvature\" in the fabric of spacetime. What we perceive as gravity is simply objects moving along the curved paths created by this distortion.\n*   **Geometric Gravity:** Often referred to as a geometric theory of gravitation, it explains phenomena like the orbit of planets and the bending of light by massive celestial bodies.\n*   **Empirical Validation:** Over the last century, this theory has been confirmed by numerous observations, including the detection of gravitational waves and the precise mapping of light bending around stars.\n\n### Why It Matters\nEinstein’s work effectively replaced the Newtonian model of a \"clockwork\" universe. By proving that measurements of time and space are relative to the observer's state of motion, relativity became the bedrock for modern cosmology, astrophysics, and essential technologies like GPS, which must account for time dilation effects to maintain accuracy.\n\n***\n\n**References:**\n*   [Source 1, 3] Wikipedia: General Relativity and Albert Einstein.\n*   [Source 4] Wikipedia: Luminiferous aether (Context on the abandonment of the aether).\n*   [Source 5, 7] Britannica: Albert Einstein's Theory of Relativity.\n*   [Source 8] ESA: 100 Years of General Relativity.",
+      "model": "gemini-3.1-flash-lite",
+      "searchQueries": [
+        "Brief summary of theory of relativity",
+        "Brief summary of theory of relativity updates",
+        "Brief summary of theory of relativity review"
+      ],
+      "suggestedFollowUps": [
+        "What are the most recent updates on Brief summary of theory of relativity?",
+        "Can you break down the technical aspects of Brief summary of theory of relativity?",
+        "What are common alternatives or comparisons for Brief summary of theory of relativity?"
+      ]
+    },
+    {
+      "id": "e40c0c17-b09f-4fca-8489-ca57f3bb72bf",
+      "userId": "c026e3d8-a7b5-4f5f-a675-f030185a33cf",
+      "query": "What is quantum computing?",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T14:12:27.107Z",
+      "summaryPreview": " Executive Summary: Understanding Quantum Computing\n\nQuantum computing is a multidisciplinary field of computer science and physics that leverages the princi...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "In what sense is quantum computing a science?",
+          "uri": "http://cognitivemedium.com/qc-a-science"
+        },
+        {
+          "title": "In what sense is quantum computing a science?",
+          "uri": "https://cognitivemedium.com/qc-a-science"
+        },
+        {
+          "title": "But what is quantum computing? (3blue1brown 2025)",
+          "uri": "https://www.youtube.com/watch?v=RQWpF2Gb-gU"
+        },
+        {
+          "title": "Quantum computing - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Quantum_computing"
+        },
+        {
+          "title": "Superconducting quantum computing - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Superconducting_quantum_computing"
+        },
+        {
+          "title": "Noisy intermediate-scale quantum computing - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Noisy_intermediate-scale_quantum_computing"
+        },
+        {
+          "title": "Multiverse Computing - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Multiverse_Computing"
+        },
+        {
+          "title": "1,000 Times Faster Operations Bring Reliable Quantum Computing A Step Closer | Newswise - newswise.com",
+          "uri": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOW9uZzhhc3hvTU5qTmFoNW5mWVg2blRWNlFuaHNHYzdWNlR6U2lxTTJ4U1pDYUQ2blliQkFneDFyZXdHTVFNNjJoSlZZS3VtN2l2S1VqVnRHcThzUDJlWHQ4eVFEUUlxTndfRDEzcGFxVjhwU1Y0dU9Id095UGdwWElacUVlWnNjaHYxY0xCUU53cnRGNGliUGMzaGJ2SmprTG9RM0FHRXlUOS1ldlHSAa4BQVVfeXFMTjlvbmc4YXN4b01Oak5haDVuZllYNm5UVjZRbmhzR2M3VjZUelNpcU0yeFNaQ2FENm5ZYkJBZ3gxcmV3R01RTTYyaEpWWUt1bTdpdktValZ0R3E4c1AyZVh0OHlRRFFJcU53X0QxM3BhcVY4cFNWNHVPSHdPeVBncFhJWnFFZVpzY2h2MWNMQlFOd3J0RjRpYlBjM2hidkpqa0xvUTNBR0V5VDktZXZR?oc=5"
+        }
+      ],
+      "fullText": "### Executive Summary: Understanding Quantum Computing\n\nQuantum computing is a multidisciplinary field of computer science and physics that leverages the principles of quantum mechanics to process information in ways that classical computers cannot. Unlike traditional computers, which use bits (representing 0 or 1), quantum computers utilize **qubits**. Through phenomena such as superposition and entanglement, qubits allow quantum machines to perform highly complex calculations simultaneously, offering the potential to solve specific problems in fields like cryptography, material science, and optimization at speeds exponentially faster than today’s most powerful supercomputers.\n\n---\n\n### Core Mechanics\nAt the heart of quantum computing are two fundamental quantum phenomena:\n*   **Superposition:** While a classical bit is either a 0 or a 1, a qubit exists in a complex probabilistic state of both simultaneously until it is measured. This enables the machine to explore a vast landscape of possible solutions at once.\n*   **Entanglement:** This property links qubits together such that the state of one qubit is instantly correlated with the state of another, regardless of distance. This allows quantum processors to handle massive amounts of data with high efficiency.\n\n### Current State of Development\nThe field is currently in an era often referred to as **Noisy Intermediate-Scale Quantum (NISQ)** computing. \n*   **Scale and Stability:** Modern quantum processors are still relatively small, typically containing up to 1,000 qubits [Source 6]. These systems are currently \"noisy,\" meaning they are highly sensitive to environmental interference (such as temperature fluctuations or electromagnetic radiation), which can lead to calculation errors.\n*   **Technological Approaches:** There are various ways to build these machines. For instance, **superconducting quantum computing** utilizes specialized electronic circuits maintained at near-absolute zero temperatures to act as qubits [Source 5].\n\n### The Evolution of the Field\nQuantum computing is rapidly moving from a theoretical framework to an applied industry:\n*   **Software and Algorithms:** Beyond hardware, a robust ecosystem of quantum software is emerging. Companies like **Multiverse Computing** are developing specialized algorithms to apply quantum-inspired or quantum-native solutions to complex real-world problems in finance and logistics [Source 7].\n*   **Research Advancements:** Scientists continue to reach significant milestones, such as recent breakthroughs in speeding up operational gate times—a critical step toward creating stable, fault-tolerant quantum computers that can maintain coherence for longer periods [Source 8].\n\n### Why It Matters\nQuantum computing is not intended to replace the classical computer for everyday tasks like word processing or web browsing. Instead, it is being developed to tackle \"intractable\" problems. These include:\n*   **Simulating Molecular Structures:** Discovering new drugs and materials by modeling atomic interactions that are too complex for binary logic.\n*   **Optimization:** Solving massive logistical challenges, such as global supply chain routing or financial portfolio modeling.\n*   **Cryptography:** Assessing the security of current encryption standards, as quantum algorithms have the theoretical potential to break many classical encryption protocols.\n\n***\n\n**Sources:**\n*   [1][2] *Cognitive Medium:* In what sense is quantum computing a science?\n*   [3] *3blue1brown (2025):* But what is quantum computing?\n*   [4] *Wikipedia:* Quantum computing.\n*   [5] *Wikipedia:* Superconducting quantum computing.\n*   [6] *Wikipedia:* Noisy intermediate-scale quantum computing.\n*   [7] *Wikipedia:* Multiverse Computing.\n*   [8] *Newswise:* 1,000 Times Faster Operations Bring Reliable Quantum Computing A Step Closer.",
+      "model": "gemini-3.1-flash-lite",
+      "searchQueries": [
+        "What is quantum computing?",
+        "What is quantum computing? updates",
+        "What is quantum computing? review"
+      ],
+      "suggestedFollowUps": [
+        "What are the most recent updates on What is quantum computing??",
+        "Can you break down the technical aspects of What is quantum computing??",
+        "What are common alternatives or comparisons for What is quantum computing??"
+      ]
+    },
+    {
+      "id": "188005b8-7760-48f7-bb33-8dd32a4ae406",
+      "query": "What is the latest James Webb Space Telescope discovery?",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T14:09:56.265Z",
+      "summaryPreview": "The James Webb Space Telescope (JWST) continues to reshape our understanding of the cosmos by capturing data that challenges established astrophysical models. I...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "Goddard Space Flight Center - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Goddard_Space_Flight_Center"
+        },
+        {
+          "title": "NASA - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/NASA"
+        },
+        {
+          "title": "Orion Nebula - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Orion_Nebula"
+        },
+        {
+          "title": "Space Foundation - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Space_Foundation"
+        },
+        {
+          "title": "Six Wild Discoveries from JWST - Carnegie Science",
+          "uri": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB6cWZyb0xDTWFncTEzRko4Q3hRSThjX1B1UjQxTDg1c3ZPQl96VUpYTllBUGljbkI4UlpEY0pMb1dENjhCNU82QUlocG5rTWZrZEtiX25aNEN1SDhNLTE2cjdTOA?oc=5"
+        },
+        {
+          "title": "James Webb Space Telescope finds 'hidden stars' making the universe's 1st galaxies much bigger than we knew - Space",
+          "uri": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQcTRqWEw3djN3Ti05b2lhb2c3eHBJNU1lWG9OZXhNazYwMFA2dmc2V3Z4YjFnNi1rQVR5NkdHVnBONk9wM3JVd1JaWjNILVpvUGszR3ZDalNDbS1tWHVmVEctN3JtSVY2ZHNucmxZTzliM3FQNklLX3BqQzE0a2lTdnVZRVExS1UwdHNJaHdJMEUxcHl5M1FnWUU4RUhCUlRlMzV4TzlnOXN1QW9ybEgzdXNzMDBGV1p6cjZPTlM4bk1SZ0Jxd1BV?oc=5"
+        },
+        {
+          "title": "Astronomers discover a brand-new type of astrophysical object: A black hole star - MIT News",
+          "uri": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeld5UkVBc195RmN3WVNCOWFtTVR1RXNwVnVHTzFUUG9CUzZGVi1FY0ZfbkhtM0FQNXFITGFBUWZRWFZ1Ym1qS1JEeVhRUGxRelVlU3dGWnpsSWdTcDM5c1lyUGluMVdSV3J1NTRpY3ZnNUI2X3FoU0lGbFUtYk1jVk1saG1LdG9oTTI0TkJwa21HNG9xU3BfeDBCUm5hV3VvejBJZ0x3?oc=5"
+        },
+        {
+          "title": "NASA is preparing to launch the Nancy Grace Roman Space Telescope. Here's what to know - PBS",
+          "uri": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPMWRNWENGZ0x2ZzI5MlEwRGxqOHZWNXBnMXNvZkI4bTZmZVVldmIwY3NId3Q1VGtOUUxKa29RYXBRS0JfOXltQ1hPYTJuTUtENlc2anhjMGVoZFoteUNWdTZxV19WSG5qYU45OVJfR3ZRRnJ5czU3cEo4NTZ6TjhTWE5ndzdNdkFaNTF2bTE4YTdWR0o0YzJwN0NHWFo3UGZmOHJ5TkNEcVpZeXpkNFhqMzJxQjlsUC1wY0lET3l30gHDAUFVX3lxTE1CRm9wUTNrY2h0MzlJejNwekdPUGN1Z0M2WTJjYnVLdWRXeGM3V21hOTZzNW9YWU9vNmQxUW5XQW5uWXNBQ0JlV3B5U2l4TWlhWUFTRDJtbFJYWTRqa0N0Q3FNVTNORm9ZTVQtYXcyVU1pVlYyR2dlM1NWX2gyVjVfODJIeUVHQVh1TnFsRlJpQVcyMDNXSkxUNjBZOFJCc0NERDJuQ1IwZElIU0IydVNYd18yWjhoTXFENVNIZzZ2SHo4SQ?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "6ea7acc9-6182-4799-af6e-b5dcd36b8564",
+      "query": "What is WebAssembly?",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T14:04:13.302Z",
+      "summaryPreview": "> 💡 Notice: OpenAI account has no credits remaining. Search completed seamlessly with Gemini AI and live web grounding.\n\n Summary\nWebAssembly (often...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "What is WebAssembly? (2015)",
+          "uri": "https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6"
+        },
+        {
+          "title": "What Is WebAssembly Text?",
+          "uri": "https://awesome.red-badger.com/chriswhealy/Introduction%20to%20WebAssembly%20Text/"
+        },
+        {
+          "title": "What is WebAssembly?",
+          "uri": "https://medium.com/javascript-scene/what-is-webassembly-the-dawn-of-a-new-era-61256ec5a8f6#.uezb4fxls"
+        },
+        {
+          "title": "WebAssembly - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/WebAssembly"
+        },
+        {
+          "title": "Blazor - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Blazor"
+        },
+        {
+          "title": "Front-end web development - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Front-end_web_development"
+        },
+        {
+          "title": "Web platform - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Web_platform"
+        },
+        {
+          "title": "WebAssembly is everywhere. Here’s how it works - The New Stack",
+          "uri": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBRNm8xeU5XR3g5UkxmRVhlUW1RaGxUaURvbm1lOWs4dW41SG9sNU50OE9WNERKcUoyY3BTSXpMQTM2OXlrQlpwbGVTSWlWb3JxdHRjRnlRbUk?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "bd694946-a70a-4d6f-af1e-c19255cf7a0f",
+      "query": "Latest advancements in quantum computing",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T14:03:54.537Z",
+      "summaryPreview": " Executive Summary\nThe field of quantum computing is currently transitioning from theoretical research to practical, scalable application. Recent advancement...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "Computer network engineering - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Computer_network_engineering"
+        },
+        {
+          "title": "Richard Feynman - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Richard_Feynman"
+        },
+        {
+          "title": "Keysight - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Keysight"
+        },
+        {
+          "title": "Quantum Experiments at Space Scale - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Quantum_Experiments_at_Space_Scale"
+        },
+        {
+          "title": "Quantum Computing Is Beginning to Take Shape — Here Are Three Recent Breakthroughs - Discover Magazine",
+          "uri": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQV1pyM0xmWVlIdFFfdjFIemdwdVA3Qmk5WVRPcjU0bldFb3pIbjJvT0ZKN1JWTjd0SzJoenFMR1g4aUVPVkxsLUt2UDJzcUIxMnhqWmlqc0FTa3hDOHhScnliQ2FmdTEtV0UxN1JWVU5yNV9sMHh1NDhTZkNBM2I1ajFCSmJLVVNvMDg2ZGt2VDhxMGxXZks1bm0wa1dxSUxza0pvMWNKTXFFUXQzbElsQ2JxUEU4NXg4WFVv?oc=5"
+        },
+        {
+          "title": "New Advances Bring the Era of Quantum Computers Closer Than Ever - Quanta Magazine",
+          "uri": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQal9DZDlPckdqYjRuQTlrQ0d4N0o3b1Q0YS15aDRYNjE5NXNvUks3dzU4MFdJbFk1VFYzOWVyNUZEOE9CUjFiZWJZTUlfUEo0cnlxMEhtTkc1U1NVZzlveURnWXFuNGdGTXc3aExfbml2Qnhva2djUG5fejBLTFhVTmNKN0ZIdk1DR1JsbW5YZFVOZlVlWVdfcFVfa0syLWlVWWdCYjZvY3c?oc=5"
+        },
+        {
+          "title": "Inside UT’s Quantum Ecosystem: From Breakthroughs to Possibilities - UT News",
+          "uri": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOS2x6S2RmSDVaemZsSGhGTVhXd0FMQ2ZjRFZ4OXBEMVpvZDNiNzJ1eWlxZDcyd2tOdVpsRUFLMTN2M29sUXdoRXoxZWpsbGpGZVVsbl90T25wYkZsYWhmUUxrMU5oZnRubGl3QkhwWHQ1QV9GVFd2aHhtMDQ2WHQtQmVkSjFpMm85Q1dfZGlVZGVyOFFEajE4OGZLRkFFcmowQ1E?oc=5"
+        },
+        {
+          "title": "Why full-fledged quantum computers might always be five years away - New Scientist",
+          "uri": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQclNmNE9oY25ZU2pXT1ZycXNnTTY0eXBDZVM2YVlSOUdjNGtuTnN0ZlpoYVhUUms5UE5xNC01U3hYRzFjYzd1aGNzMmtmQnNZNnN1QVUtVU1ZUE1YYmJfYTZCQk5hYndYS0JIdDhvdjV3SHJoN3o1VU5MblFRd1A2LUFhSmFkS3MyVENpbVJPTlRoVTQzSG8yWW9JV2c4MDM2cnpkTWtDZHBfSWlNSWpiRDRn?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "619a1a20-62b6-466b-98ee-d4fa9d05ad9f",
+      "userId": "5ef37204-fcea-4934-a37e-a62e5cdb89d0",
+      "query": "who is narenda modi",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T13:48:39.588Z",
+      "summaryPreview": "> 💡 Notice: OpenAI account has no credits remaining. Search completed seamlessly with Gemini AI and live web grounding.\n\nNarendra Modi (born Narendra D...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "'Modinomics' The New Economic Strategy That Could Be Coming To India",
+          "uri": "http://www.businessinsider.com/who-is-narendra-modi-2014-4?nr_email_referer=1&utm_source=Triggermail&utm_medium=email&utm_content=emailshare"
+        },
+        {
+          "title": "The Man Who Is India's Future Has His Own Checkered Past",
+          "uri": "http://mashable.com/2014/05/16/narendra-modi-india-elections/"
+        },
+        {
+          "title": "Narendra Modi - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Narendra_Modi"
+        },
+        {
+          "title": "Narendra - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Narendra"
+        },
+        {
+          "title": "2014 Indian general election - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/2014_Indian_general_election"
+        },
+        {
+          "title": "Reserve Bank of India - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Reserve_Bank_of_India"
+        },
+        {
+          "title": "Narendra Modi - Indian PM, Reforms, Diplomacy - Britannica",
+          "uri": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9MWkpBUkg1NDN5aFlVUjRmWEVNWndBQkkwWlJLZ3Zwc0RndHFndzIwc2t3LUp2MWw4eXNwT1BHZWxFOUVnaUlLMUNrMjRBUzJNZlllbGJocG02SndTcXdHX0U2RTAxY0tsd1ctQW80dw?oc=5"
+        },
+        {
+          "title": "‘Cockroaches’ Threaten to Overrun Narendra Modi’s Kitchen - WSJ",
+          "uri": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYWUta2UtcTFRY0tsekZnbE5JaHRYNGlJNFVwYVpHT2ZDVkM2dlVlVzhkcnRZb3NTemc1MEtKc19YRzVGd0dBaGU2OXNpV3FBdUZqOV92V1dacjhIdzh0UmZleXZXVWRaYkItODJFMGNmRnJhMDVPdHZyY0Y3ZFM4VnF0VTdwWXhtNzdZRUxYWk15RUJCaGc?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "20b119db-bd31-4118-92cc-4105300b31fb",
+      "query": "Recent discoveries in exoplanet atmospheres",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T13:47:19.130Z",
+      "summaryPreview": "> 💡 Notice: OpenAI account has no credits remaining. Search completed seamlessly with Gemini AI and live web grounding.\n\nThe field of exoplanetary scie...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "Harvard scientists detect atmosphere on distant ‘Earth-like’ planet - FAS Current",
+          "uri": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcXlHNzFkZENrdVowLUJjd2dBak5LS21ZNkpyMVAtMFBqaXdMM3NMaVN0RlkzaU5aSkYzeGRWQ1draDgxYWhUSFRGdWRKcmpGRWYtNVlMeUtacmdvZGdLV3FmajZ5bTVNVGFnTF9IOS04T1FSYVFudzZlSWFBOW5paEJKZlRHUFpJUzB6QUlxeWlPT0haV0pzUXdQcFlidw?oc=5"
+        },
+        {
+          "title": "A New Earth-like Exoplanet Discovered - Astrobiology Web",
+          "uri": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBWbi12QUdyWE52M1VJeFdBeDRQRVBqSk5JeWpLZGxxTmJCeUZaVEF6TEtCekc0d0sxRU1sWV9WTUFNMURCRjNSX1FEQ0tlZGFfendPOE1fSmlXQ3phS2lQN0dEU0Y5WmU3eHFsN2xYWEtjN1V6c2kzNGN1T29VRGs?oc=5"
+        },
+        {
+          "title": "Earth-like exoplanet found to have an atmosphere | Space - The Guardian",
+          "uri": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOeEN3UFpNWVR1b3FwOFk3MUJ3MHlHd1JuV0hpMkc0akNVRWJHWHNjLWQ0Vm1iOU9aSmxrNC1sZi1FVzVHellxM0F6LWRQODJJNU9wRE5WVjVQYy1MWnEtamg3LWZYTkVxaFNFYWg1dzd0VExpbXZyVW9BWnBGR2pVWmxNSlRBN0dlUHdYRjBwLVM0UlRKTFZlMGQ5dThKZXdpbVZn?oc=5"
+        },
+        {
+          "title": "Astronomers de-fog exoplanet atmospheres with new cloud-detecting method - Johns Hopkins University",
+          "uri": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNX1Q3aXlvUUJlWXlzekVpS2hoNFlOQy1MVW1VcHFwTXdLV3lvUkNIbmlGTWpzeW4wUFNldUJqTjJqazBucnpYMk5SNFg1VFRoT1o4SGt6UHFzODE0OWwxbzZSbFNjRTBodDVZVFJ5dFYxbEpXUDNpOFF6a09weEU1V29lcDduczg?oc=5"
+        },
+        {
+          "title": "Astronomers Find an Atmosphere on a Nearby Earthlike Planet - The New York Times",
+          "uri": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNb2VrM0JicFZGM3VUbkktY1l3eXJjVkxVeWtuaER0UzRPNVU0Zk9RMk1zdUhoOXktQjFjN0U3MkdvYXFob3ZrbHFkS2JkcWZRX1dtWVlOTFVIN0QyS2NEdTJqbEdSMXBTaVNaaElWN2V4ZXZ1dzc1UFdCb1dNc25CVS1ueEY?oc=5"
+        },
+        {
+          "title": "Exoplanet - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Exoplanet"
+        },
+        {
+          "title": "Extraterrestrial atmosphere - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Extraterrestrial_atmosphere"
+        },
+        {
+          "title": "Discoveries of exoplanets - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Discoveries_of_exoplanets"
+        }
+      ]
+    },
+    {
+      "id": "f6e24014-0871-4d45-83be-d35e3c775409",
+      "query": "What are solid state batteries in 2026?",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T13:42:15.140Z",
+      "summaryPreview": "> ⚠️ Notice: OpenAI request could not be completed (429 You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "Solid-state vs lithium-ion batteries: EV timeline compared - EV Infrastructure News",
+          "uri": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOTF9Fb3dRck1qbGZOcnFrTktES1ZVUWUwZUQwOUg4V19kWGZ3ZWhyVmMzUjdVNDFRaVJZd3pXdGczamMzQUstRElMSFY2MDRoU3dydExuNDZtVDd4RTBERVpCUUQtTHpFOTVHUU1XbDBBX2x6SXdTWTNKcWtWR21sbzdPQ0dMWWFGM21xLQ?oc=5"
+        },
+        {
+          "title": "Panasonic Energy develops solid-state battery that can operate at 150 degrees Celsius - Reuters",
+          "uri": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQTXJZSGhpbmRLbUNxMlBGd1lYNFV3Ry1iRjZWODVrYVAtekx3RXM5Zm5QSENlbExDbk1oTWdaRnZtb0Jzbm5Hcm5jY1Q1M1BTa1hWU1ctSmNKMl8zRndOdVN4U24wVUo2MDNuRDBlb0RqdXJxeDdMdTFtYlE3b0xZeG4zeG83aXdfajRhZHlRa0JGclo5M09IVXkyVWFNd0ljSDYwb2p1RXUtYWQxWnBpNkNkczJsZER0RkRtSEpNRkVWaERJ?oc=5"
+        },
+        {
+          "title": "Squeezing solid-state batteries prevents short-circuits - Stanford Report",
+          "uri": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPQThCR2FWQk10Tjluak11dmZGODRrV0NfeHJUckFRVFR4dDVYd0EtdjZWM1o3T3V6UjEzSk5zeExHVEhwZk9Kc2puNVBiOUh6SnJMZnNQY2NYVG5ScFhqNXNlSUpnaE9vLVJxbHNkQzRscjFSVlVhZ2JuT29xVVlHVXVBY0VBcGpKclJ1Y3BQMzVkQnRWZnNB?oc=5"
+        },
+        {
+          "title": "IFA 2026 Made Me Realize Semi-Solid-State Batteries Are the Next Big Thing in Consumer Tech - androidheadlines.com",
+          "uri": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxON01yRWNhRFRQbDR4ZmtTRWMzWFFEemNvWHYwWmQ1NFZ6czRvajBiSTRWeDE5UGFBRjVTVUlHekRVY0JMVWVWZ0t2NjdOWFhqZzUyMFpPNkcxajVKWGYxNTZDTzhnU0tUWmJDSVhlQ1hPRFdjU1AwNVRlT3VJYTlHbmM4M1lxcWNpdlFfNVE3SmJxZ0xxNlFIV2hlelc1YUJvMFctTlpzcU1GT25nN2FBb2RoT3JFQkljNWZnRkVsYlZkay1EdFZOTXNvS0RVU0JRbU93?oc=5"
+        },
+        {
+          "title": "ProLogium begins series production of next-generation solid-state batteries in Taiwan - electrive.com",
+          "uri": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOYjNBeS1oWno1ZW14aDEwbDJtbm1WWWlkaW1qWjRDZlRqU3JLbnUtS3lFOU1TTGhCYlZmVnNzeUptSkduSldhUnZlUnFZQVRtQlR6b0F4YlJWaHdRTGk4bFJWY190MGNvTlR0a3o1UU9qMG9xbDc0bnMyd1FKZlBMTlM4YjlYUFZYSmVndUJ6TlZiUEFqcTd2bTVWR2MxME5rSXpYdElMTkFkUjRBd0ZBTl9TdXp0bldkZGUzaXBSdzQ?oc=5"
+        },
+        {
+          "title": "Solid-state battery - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Solid-state_battery"
+        },
+        {
+          "title": "Donut Lab - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Donut_Lab"
+        },
+        {
+          "title": "Battery isolator - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Battery_isolator"
+        }
+      ]
+    },
+    {
+      "id": "08c43d73-0a6c-4040-a3e6-488bfda861e4",
+      "userId": "5ef37204-fcea-4934-a37e-a62e5cdb89d0",
+      "query": "1+5",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T13:40:23.370Z",
+      "summaryPreview": "The mathematical expression 1 + 5 equals 6.\n\n Mathematical Synthesis\nIn standard arithmetic, the addition of the integer 1 and the integer 5 yields a...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "Gameday: Clingstones 1, Biscuits 6 Final Score (09/09/2026) - MLB.com",
+          "uri": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5RMW85cEVydHc2dDZtcU1FRTAwSkg2VnRkdHhSSmRraWJHM2hrR1BKRUV6UjNpYVpmY3p2SUlhSHlrbXRLdzNjT0V0M25mMUdyeFNoTjNqMks5UQ?oc=5"
+        },
+        {
+          "title": "Upset alert in Week 1? Why these 5 NFL favorites could easily drop their 2026 season openers - CBS Sports",
+          "uri": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9ROXBoX2NNUW5SY0lYSUtXQ2VnR3J0SWRQS09JNDJySHJDc19TZzhhaU9FVFVyTFg3ODJpQ2tsLU51TzhJblVHb2k2U1lUTW1INzk3TXRzN09NdnhLNWE2QmNJUzZab3o2THdaVC01TkhuX2ZqZ2hRVnp3?oc=5"
+        },
+        {
+          "title": "Kitsap Sun athlete of the week poll for Sept. 1-5 - Kitsap Sun",
+          "uri": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQW9BQjJIbW9GZ3NaM3RHbUxDbEVtem04Z3g2WEdzWnk4alU4bzItN3JSYmNPb3RWREhmNlV5OEVUR3pEalVsZFlmYXEyaW02WS15WFVpaVdCblB4ZEJSdGVBcnpnazZJN0JCYzB6V2JoUjV2emYyMFNMbVo5OXJ6VmxlbzFKZ01yZ0xDMURISmNjaWZBeWhQNzRNNU9xMHVZcmdHeUd3ZXJ5LW9aQTVqMVVmNVUtNXZ0YkJPZDhzMThvZw?oc=5"
+        },
+        {
+          "title": "NY Lotto, Win 4, Take 5 winning numbers for Wednesday, Sept. 9 - Lohud",
+          "uri": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWVk1OHNZUjNkRFo0dWZubHlrUlBncDdoc2xHTUdtMkR5a3dFT09MX3hETGJUcVVCWHRQYWh6aXlSdDA5eTBkUkZjUXItQ1JmX01xTE9rZFg1T3VXRzBBMkFzMk5iZ1dVNG11YjlaM3BGMkNxYkpuc2NyV2YzbEZYbEg0cUxzWFFlM1YzZ0E5QkhWYVdXb3Y2REcyVnlUTWo2VFZXLTNNUE5tbFhDSURFQ0NIZm8?oc=5"
+        },
+        {
+          "title": "Rams' 5 keys to victory against the 49ers in Week 1 - Rams Wire",
+          "uri": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVlBjX2ZSZDRTRkEwUF80MTFvLVA5VkxENXRRS3c5dEN0ZVo5ZFVscFc2R21EcTZjelBWcjBBUFJQeGVvLUhOODdFLWYzVGNiZHEyanZfQmt2SnNTYkhGaktLZU9PbVpJTUh1TzUyRW5PdVBpbWRVQkt2Uk1sdnpCUHdSSEhmZmNJb05rRFJsdTdWdVU3UXlyUGV3dHpMU05mZWxxVTJqU1VGMFlrdTFBbDBDX3pLUUdRUzNnVA?oc=5"
+        },
+        {
+          "title": "1.5 - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/1.5"
+        },
+        {
+          "title": "1 - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/1"
+        },
+        {
+          "title": "LibreOffice - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/LibreOffice"
+        }
+      ]
+    },
+    {
+      "id": "7eecb732-0935-4fe2-8df3-2c59a304e34e",
+      "userId": "5ef37204-fcea-4934-a37e-a62e5cdb89d0",
+      "query": "trip a plan to goa",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T13:36:51.257Z",
+      "summaryPreview": "Planning a trip to Goa requires a balance of leisure and awareness of the latest local regulations. As one of India's top winter travel destinations, Goa remain...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "Show HN: GPT Researcher – Open-Source Autonomous Research Assistant",
+          "uri": "https://gptr.dev/"
+        },
+        {
+          "title": "Show HN: From Chatbots to AI Agents: The Quiet Revolution",
+          "uri": "https://tolearn.blog/blog/from-chatbots-to-ai-agents-quiet-revolution"
+        },
+        {
+          "title": "Show HN: Pineqone – A simple way to research and plan a trip",
+          "uri": "https://www.pineqone.com"
+        },
+        {
+          "title": "Ask HN: Hacking your brain after trauma and mental health crisis?",
+          "uri": "https://news.ycombinator.com/item?id=41931699"
+        },
+        {
+          "title": "Planning a Chennai-Goa road trip in my Toyota: Need help with itinerary - Team-BHP",
+          "uri": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOemZ5X2hpR0tTVEpIV1BLcjdvUHpySmthVDQ0cTdtM0lTM29kTVU3M2Q0WDFJbE5zUm1lU0hzd3JlUUxZQkJKUkZVNTk1YjF0T0t2UWI5LVZyRklMSUI5WjlLS2RRQ0dMNHdzTDlmZlZGUmRSeEFCaWJpZ2lYSDJVc1NZNXZQVUphVHM1eVlKZUhfS1dn0gGaAUFVX3lxTFA2R0laM1VROXNnNUliTVgzVDNBMFdzeWNGQl9EN0xYVXc2cWZwTzE3RTJPcklKa0hIUWZqWmlELTZtLW5KdGUtUEQ4ZzVzUEdhU3pHRTh6Zm1Cc3hiSDZ5SVJNb0t1cms5S3k2ckl1cFBYdmNLYTFLMVlZU1JjTXMycXdSTVVyVVdlUjI4cS1Ea1hURW5sRmZPN1E?oc=5"
+        },
+        {
+          "title": "After Goa, KSRTC plans new interstate budget tourism trips - timesofindia.indiatimes.com",
+          "uri": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQWVhCZ29pekdfU1NlMlA4SHlOWVlXczV3UkdsXzBUZzY1NVNTUzBiWV9hTHU3Sll1eHozS0g5WmVzQ3hMX0xTN1JWMmhwVWJiYVZOM0hBVE9fdnJuZTZWa3JTTThHaVBOYXByakhLSkl4RjgtLW1WeXhvNl9kbVhRZ29WOGN0d0JUc3FyTHRRdUM3ckV1NTBqSlVmV01oUzN2ZkoyMUpRV3NQeHNRYXJkbEx3eG5xUk9FWHVvMk02bnJRNTZtSjdEbVBB0gHPAUFVX3lxTE1JWXJGZl8yZTB2MkhxdUxpaFg4d1FUS1NxQmIxY0kxQXdnUVZpUmFZU1dCa3ZqRVllcEZrT0RfeGZDN3BVVG04U2lFbFdxVGFuZFFLZnNzODU5b2pyYnZyTVZCSFVFWElHOVpVa3RwcDV2WFFFNl9lZ1J4a24zMEl0dWRDbkxZQzROM0xrcXRfWHZtZ0hvVGlBTlNwYU5UMlhJZm1pamlNY2F3Z1g3NUtNSURQb3JTMlotdm1KYk1YS00zSjdwa2V0RGRJaXU0QQ?oc=5"
+        },
+        {
+          "title": "55 pc of Indians plan winter trips; Goa, Kerala lead demand, says report - News18",
+          "uri": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNWHQwZzRlWVliU3BvVU9QaktEZl9GaER2NVI4RzBueEpOYWU5S1RjNzc5U3haelBUZFNYX2NyOXhVcTJXSy1KNm9OVmF0ZkdDRjgyRXdEbHBEdFFvbjMxbVJ6S2pWZ2xOMVFUanBfTkM2THJqYkpiQWhMQnlqNG0tRXdDWVIzUWNoZHV5VmU5RTRLVEJZenFTZ01sLWY0U3NCMW5sX2xPY2p4WkdsMWpITmRlbE1GeEJCLWfSAb8BQVVfeXFMUEJHcnRmNW0wOC15N0o4TWE3LUVmTVBLcHhuVnc3ckg4TjB0OW50TFBCVFNJOTEwcnB4Z2k1T2JPMzZKX25kQ1pqRjAycVVZUVNxYkJjRU9kQVdSdHhpbXI3NUtyekpzQVF4OVdMNDc2MUhtcjF6Wjh1MWF3OHFNR1ZzejcyVEp0Y2R1S3d4ZlhtTlU0N2VSR0h5bEhJQWRqVmhGcFI1c3dhZHVBMWtmVThiRG1EZTIxSnBoQi1CVms?oc=5"
+        },
+        {
+          "title": "Planning a Goa trip? These beach activities could now land tourists with hefty fines up to ₹1 lakh - Business Today",
+          "uri": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQSUgtOUphN1FsclBGa1A0VVdtbXRiWkY3azFpSldFc3ZjZUJCclhKYkNDWEVMTkxHYnkxeG9GOFlOM0tXTVl0bDgwbXBvNmE1aUJrRjJybzYzcjJOQnMzSWU4U2F2ZXYzNEhROVJIakNmSEx0VV84RWZPVmZEX25pWmN2bHh0Tkh6Rkp3SVBVMUtNZWJrREZ3bVdOZHFERy02MktrakVZUTNTY3NubXV2cjctT3d1bXgzaF9yNGxmM1Y1ZU9HcWY2VWJPWkg3YW5KRnUzeV9wV2VMU3RXYjczNElyMGZWVHoyTmxGNDBQMWxIYVNfQm50ZdIB_gFBVV95cUxNRExTNFIwcmVBdk9GMjVBd0FXaTlXRy1OQ3BaTU1jR1h1MXQ3emN3cWRJMTJKZ3ZObFlONmlQbnprcnlQaF95NlFrSDFTdFNpUllNa0o4S0hlMmlEbHNhbC03WnVUemFvNV91NzhvdUxydG1qTllUb3A4anFUTmpiU1hDdGh5S21nZmw4QWFaa2t1LWZRTlUzNHgxQzk1U0d4NU1IajR4UjZOWWVRc21mUmJKSlF4ZDhZcXBUcW9pMFJxTVRqV1FhWW9TX1B5X3FQN0tKSmhPaFBYd01FUzQtaEFhbTV6dXBCQlh1YVVsR2Y4N2JRSmhBRDR5WGZuQQ?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "5cbff075-6166-4f53-a30d-d92ea5d8821e",
+      "query": "Quantum computing breakthroughs",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T13:35:53.379Z",
+      "summaryPreview": "Quantum computing is currently transitioning from a theoretical pursuit to an applied industrial technology. Recent breakthroughs have moved beyond merely incre...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "Nvidia, Rolls-Royce Announce Quantum Computing Breakthrough for CFD in Jets",
+          "uri": "https://nvidianews.nvidia.com/news/nvidia-rolls-royce-and-classiq-announce-quantum-computing-breakthrough-for-computational-fluid-dynamics-in-jet-engines"
+        },
+        {
+          "title": "IBM achieves quantum computing breakthrough",
+          "uri": "https://www.axios.com/ibm-quantum-computing-axios-hbo-bd9d50b7-3c11-4586-bdb1-8bbc9928ad1b.html"
+        },
+        {
+          "title": "Microsoft announces quantum computing breakthrough with new Majorana 1 chip",
+          "uri": "https://www.theverge.com/news/614205/microsoft-quantum-computing-majorana-1-processor"
+        },
+        {
+          "title": "British firm claims quantum-computing breakthrough",
+          "uri": "https://www.bbc.com/news/technology-58738571"
+        },
+        {
+          "title": "Quantum Computing Nears Reality with 1,000x Speed Boost - Mirage News",
+          "uri": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPUmd4alNqOUNYR29RSUU2b0hacEtxTGJkQzFyXy1EOUhqYV9FRzluenFzaF9yZ3Qza3luWDFKT0sxaWg4VEhteXU0YWhleTdtaU5GMTNYTmdISFdMRTNpTGdQemhTaTVYcUlXSlNDUkdWUjZVeUlGc3JVamJqbVFDaWNDMGk?oc=5"
+        },
+        {
+          "title": "Quantum Dynamics Breakthrough Overturns Claim of ‘Quantum Supremacy,’ Opens New Research Directions - simonsfoundation.org",
+          "uri": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQV3MwSVNkUTVmZTVWcWJiX3hJcDNhQmZibmRCNmRfNG9iZUUtVTJmejRJYWVpQ3dLR29yVktLVi1RdXlBaXZxU2NRai04V21SX1ZMQV9iRVlUSlJ1Zkd4Rkl1Q245ZHQ5NXFhXzhBeUhNMkpzUE43WDNaY1g4NWV6UEpBOEE1NlViRTdfWmx1cTh3eEdVWDE5bm85b0FnazhKYXBZU2hjLVljZUZ3RHhjXzl2SlQ0VjN5WUlhcWxXYldSNDJETDVOTjNvbkRmMW94MmptZXUwSFM?oc=5"
+        },
+        {
+          "title": "Quantum Computing Is Beginning to Take Shape — Here Are Three Recent Breakthroughs - Discover Magazine",
+          "uri": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQV1pyM0xmWVlIdFFfdjFIemdwdVA3Qmk5WVRPcjU0bldFb3pIbjJvT0ZKN1JWTjd0SzJoenFMR1g4aUVPVkxsLUt2UDJzcUIxMnhqWmlqc0FTa3hDOHhScnliQ2FmdTEtV0UxN1JWVU5yNV9sMHh1NDhTZkNBM2I1ajFCSmJLVVNvMDg2ZGt2VDhxMGxXZks1bm0wa1dxSUxza0pvMWNKTXFFUXQzbElsQ2JxUEU4NXg4WFVv?oc=5"
+        },
+        {
+          "title": "IBM, Lockheed Martin Announce Swiss Quantum Innovation Hub at ETH Zurich, Anchored by Switzerland's First IBM Quantum Computer - The Malaysian Reserve",
+          "uri": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPU0pDUGFjRVRheE0xZ09LbE11UE1ockR3MC13SVdlbWdZQ1FZRkJaMXd2YjlLcTE4aG5ZTHZ3c2Q5Wkp6TW5Xc3pxVlRFZF9vY2FmRW9haHVFdHpqM002OFNIc1ZXS1FQaHprUXlIR3Vyd0RHcW1NdnlpSm1mUlA0UmhQaUlaeGJoZnVQU0hja2ZVWlpGX0M1Q0NzQkxZTlR1YmNDMmt0aEZtRkFYX3Ita1B0RTVBb05BVnRJNW9IdDZfTFRzaU9IdUdEWHFZa0hraDdrczR5Y3ctdWZyLUY4TDcwa09vNS0xMG9xWnR2UjlBT3BZRjZiYUFZMA?oc=5"
+        }
+      ]
+    },
+    {
+      "id": "27fcca18-e285-47e7-ae0f-50a96794b2a7",
+      "query": "Latest updates on Artemis mission to Moon",
+      "engine": "gemini",
+      "timestamp": "2026-09-10T13:35:42.182Z",
+      "summaryPreview": "As of November 2024, NASA continues to progress toward the Artemis program’s goal of returning humans to the lunar surface. The mission architecture is centered...",
+      "sourcesCount": 8,
+      "sources": [
+        {
+          "title": "List of Starship launches - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/List_of_Starship_launches"
+        },
+        {
+          "title": "Moon landing - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Moon_landing"
+        },
+        {
+          "title": "List of missions to the Moon - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/List_of_missions_to_the_Moon"
+        },
+        {
+          "title": "New Space Race - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/New_Space_Race"
+        },
+        {
+          "title": "Artemis II: NASA’s First Crewed Lunar Flyby in 50 Years - nasa.gov",
+          "uri": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBvcjUwdWxOQmdCNVlfNGEzTlE3dTdWbl8yaTVEWnBQUU13ZThfSFFydzVYeWtKNG9uTnhHVGxxXzZadnNZdzdCRkJ4QjhBY3daQmc?oc=5"
+        },
+        {
+          "title": "Artemis III | Mission, Date, Crew, & Spacecraft - Britannica",
+          "uri": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE82STR2WmxkS1VYQUZ1SHlwRERRN09tVzZyZk1sT3luc1ZVcWNRYXdCelBrMlpoMVctb1FfZDRoZ1psZTVXaVpialNkWnByUGN0Q215UXZ4UQ?oc=5"
+        },
+        {
+          "title": "What Is Artemis II? Launch Date, Crew, And NASA’s Next Moon Mission Explained - Adler Planetarium",
+          "uri": "https://news.google.com/rss/articles/CBMif0FVX3lxTE96STN4bXF6QzNYb1dFdU5XQkNsaDNiZDJJZ3dDS0JFek9rdXF3TTZvWWJvSHJMZTlfNU9iOHE1eXh3VlNNS1dIVEhfZWh6RVd4dWkxM3c3eXNId2U0Q01ZRmc5c1lUUjNGUHlMUjMxTldBSVBzN05QbEhNaEZPOVk?oc=5"
+        },
+        {
+          "title": "NASA’s Artemis II moon mission astronauts make first-ever ‘ship to ship’ call to ISS - newsonair.gov.in",
+          "uri": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNak5OVUxMQmllRGVRTHhfbHRXU2dTemJwTEladTNtM1AtTFBlWVYtZ0NzMXNiQXdvY0pFbmZ3bEpKdG1tOVZiV1hVcHBjdkF3UzlvWWtUZno2bmRlX3Z1Q0RNejFKeTA2bFhrcUNpR2Q1c084T3ZHNHhQTUtNT2tBRVk1aVkwTGsxTklIQXAzTERHWUNuZzFnczNZb2ozQWFaUVZrbXc2eC1ibTQ?oc=5"
+        }
+      ]
+    }
+  ],
+  "bookmarks": [
+    {
+      "id": "87f83bed-b59a-42fd-994d-6e633b482c40",
+      "userId": "c026e3d8-a7b5-4f5f-a675-f030185a33cf",
+      "query": "What is quantum computing?",
+      "title": "Quantum Computing Basics",
+      "summary": "### Executive Summary: Understanding Quantum Computing\n\nQuantum computing is a multidisciplinary field of computer science and physics that leverages the principles of quantum mechanics to process information in ways that classical computers cannot. Unlike traditional computers, which use bits (representing 0 or 1), quantum computers utilize **qubits**. Through phenomena such as superposition and entanglement, qubits allow quantum machines to perform highly complex calculations simultaneously, offering the potential to solve specific problems in fields like cryptography, material science, and optimization at speeds exponentially faster than today’s most powerful supercomputers.\n\n---\n\n### Core Mechanics\nAt the heart of quantum computing are two fundamental quantum phenomena:\n*   **Superposition:** While a classical bit is either a 0 or a 1, a qubit exists in a complex probabilistic state of both simultaneously until it is measured. This enables the machine to explore a vast landscape of possible solutions at once.\n*   **Entanglement:** This property links qubits together such that the state of one qubit is instantly correlated with the state of another, regardless of distance. This allows quantum processors to handle massive amounts of data with high efficiency.\n\n### Current State of Development\nThe field is currently in an era often referred to as **Noisy Intermediate-Scale Quantum (NISQ)** computing. \n*   **Scale and Stability:** Modern quantum processors are still relatively small, typically containing up to 1,000 qubits [Source 6]. These systems are currently \"noisy,\" meaning they are highly sensitive to environmental interference (such as temperature fluctuations or electromagnetic radiation), which can lead to calculation errors.\n*   **Technological Approaches:** There are various ways to build these machines. For instance, **superconducting quantum computing** utilizes specialized electronic circuits maintained at near-absolute zero temperatures to act as qubits [Source 5].\n\n### The Evolution of the Field\nQuantum computing is rapidly moving from a theoretical framework to an applied industry:\n*   **Software and Algorithms:** Beyond hardware, a robust ecosystem of quantum software is emerging. Companies like **Multiverse Computing** are developing specialized algorithms to apply quantum-inspired or quantum-native solutions to complex real-world problems in finance and logistics [Source 7].\n*   **Research Advancements:** Scientists continue to reach significant milestones, such as recent breakthroughs in speeding up operational gate times—a critical step toward creating stable, fault-tolerant quantum computers that can maintain coherence for longer periods [Source 8].\n\n### Why It Matters\nQuantum computing is not intended to replace the classical computer for everyday tasks like word processing or web browsing. Instead, it is being developed to tackle \"intractable\" problems. These include:\n*   **Simulating Molecular Structures:** Discovering new drugs and materials by modeling atomic interactions that are too complex for binary logic.\n*   **Optimization:** Solving massive logistical challenges, such as global supply chain routing or financial portfolio modeling.\n*   **Cryptography:** Assessing the security of current encryption standards, as quantum algorithms have the theoretical potential to break many classical encryption protocols.\n\n***\n\n**Sources:**\n*   [1][2] *Cognitive Medium:* In what sense is quantum computing a science?\n*   [3] *3blue1brown (2025):* But what is quantum computing?\n*   [4] *Wikipedia:* Quantum computing.\n*   [5] *Wikipedia:* Superconducting quantum computing.\n*   [6] *Wikipedia:* Noisy intermediate-scale quantum computing.\n*   [7] *Wikipedia:* Multiverse Computing.\n*   [8] *Newswise:* 1,000 Times Faster Operations Bring Reliable Quantum Computing A Step Closer.",
+      "engine": "gemini",
+      "sources": [
+        {
+          "title": "In what sense is quantum computing a science?",
+          "uri": "http://cognitivemedium.com/qc-a-science",
+          "snippet": ""
+        },
+        {
+          "title": "In what sense is quantum computing a science?",
+          "uri": "https://cognitivemedium.com/qc-a-science",
+          "snippet": ""
+        },
+        {
+          "title": "But what is quantum computing? (3blue1brown 2025)",
+          "uri": "https://www.youtube.com/watch?v=RQWpF2Gb-gU",
+          "snippet": ""
+        },
+        {
+          "title": "Quantum computing - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Quantum_computing",
+          "snippet": "List of quantum computing journals List of quantum computing books List of quantum software Magic state distillation – Quantum computing algorithm Metacomputing –"
+        },
+        {
+          "title": "Superconducting quantum computing - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Superconducting_quantum_computing",
+          "snippet": "quantum computing is a branch of quantum computing and solid-state physics that implements superconducting electronic circuits as qubits in a quantum"
+        },
+        {
+          "title": "Noisy intermediate-scale quantum computing - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Noisy_intermediate-scale_quantum_computing",
+          "snippet": "Noisy intermediate-scale quantum (NISQ) computing is characterized by quantum processors containing up to 1,000 qubits which are not advanced enough yet"
+        },
+        {
+          "title": "Multiverse Computing - Wikipedia",
+          "uri": "https://en.wikipedia.org/wiki/Multiverse_Computing",
+          "snippet": "Multiverse Computing is a quantum AI software company headquartered in San Sebastián, Spain, with offices in Madrid, Barcelona, Zaragoza, Paris, Munich"
+        },
+        {
+          "title": "1,000 Times Faster Operations Bring Reliable Quantum Computing A Step Closer | Newswise - newswise.com",
+          "uri": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOW9uZzhhc3hvTU5qTmFoNW5mWVg2blRWNlFuaHNHYzdWNlR6U2lxTTJ4U1pDYUQ2blliQkFneDFyZXdHTVFNNjJoSlZZS3VtN2l2S1VqVnRHcThzUDJlWHQ4eVFEUUlxTndfRDEzcGFxVjhwU1Y0dU9Id095UGdwWElacUVlWnNjaHYxY0xCUU53cnRGNGliUGMzaGJ2SmprTG9RM0FHRXlUOS1ldlHSAa4BQVVfeXFMTjlvbmc4YXN4b01Oak5haDVuZllYNm5UVjZRbmhzR2M3VjZUelNpcU0yeFNaQ2FENm5ZYkJBZ3gxcmV3R01RTTYyaEpWWUt1bTdpdktValZ0R3E4c1AyZVh0OHlRRFFJcU53X0QxM3BhcVY4cFNWNHVPSHdPeVBncFhJWnFFZVpzY2h2MWNMQlFOd3J0RjRpYlBjM2hidkpqa0xvUTNBR0V5VDktZXZR?oc=5",
+          "snippet": ""
+        }
+      ],
+      "savedAt": "2026-09-10T14:12:27.119Z"
+    },
+    {
+      "id": "b1b02f36-7e10-45b2-bdfb-e83e24ab4c66",
+      "userId": "c9f2d395-cb70-4c4d-993e-186b2b0bcc8f",
+      "query": "Quantum computing breakthroughs",
+      "title": "Quantum Breakthroughs",
+      "summary": "Key developments in quantum computing",
+      "engine": "gemini",
+      "sources": [],
+      "savedAt": "2026-09-10T13:36:06.837Z"
+    }
+  ]
+}
